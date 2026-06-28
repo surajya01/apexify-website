@@ -8,12 +8,19 @@ export function useInView(options?: IntersectionObserverInit) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) { setInView(true); observer.unobserve(el); }
+        if (entry.isIntersecting) {
+          setInView(true);
+          // Add CSS class for reveal animations
+          el.classList.add("in-view");
+          observer.unobserve(el);
+        }
       },
-      { threshold: 0.15, ...options }
+      { threshold: 0.1, ...options }
     );
+
     observer.observe(el);
     return () => observer.disconnect();
   // eslint-disable-next-line react-hooks/exhaustive-deps
