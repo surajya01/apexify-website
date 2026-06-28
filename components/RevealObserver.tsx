@@ -3,32 +3,36 @@ import { useEffect } from "react";
 
 export default function RevealObserver() {
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("in-view");
-            observer.unobserve(entry.target);
+            io.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.06, rootMargin: "0px 0px -30px 0px" }
     );
 
-    // Observe all .reveal elements
-    const observe = () => {
+    const observeAll = () => {
       document.querySelectorAll(".reveal, .reveal-left, .reveal-right").forEach((el) => {
-        observer.observe(el);
+        if (!el.classList.contains("in-view")) {
+          io.observe(el);
+        }
       });
     };
 
-    // Run on mount and after a short delay (for dynamically rendered content)
-    observe();
-    const t = setTimeout(observe, 300);
+    // Initial observe
+    observeAll();
+
+    // Re-observe when new elements appear in DOM (for dynamic content)
+    const mo = new MutationObserver(() => observeAll());
+    mo.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      clearTimeout(t);
-      observer.disconnect();
+      io.disconnect();
+      mo.disconnect();
     };
   }, []);
 

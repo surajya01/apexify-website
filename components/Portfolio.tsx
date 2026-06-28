@@ -43,7 +43,7 @@ export default function Portfolio() {
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
           {filtered.map((project) => (
-            <article key={project.title} className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 bg-white reveal">
+            <article key={project.title} className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 bg-white animate-fade-in">
               <div className="relative overflow-hidden h-44 sm:h-48 lg:h-52">
                 <Image src={project.image} alt={`${project.title} — ${project.category} project by Apexify`}
                   width={800} height={208} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />

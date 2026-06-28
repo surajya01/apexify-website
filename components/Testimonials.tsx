@@ -38,7 +38,7 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 mb-8 lg:mb-10">
           {visible.map((t, i) => (
             <article key={`${t.name}-${index}-${i}`}
-              className={`relative bg-white rounded-2xl p-6 lg:p-7 border transition-all duration-500 reveal ${
+              className={`relative bg-white rounded-2xl p-6 lg:p-7 border transition-all duration-300 ${
                 i === 0 ? "border-blue-200 shadow-xl shadow-blue-100/50" : "border-slate-100 shadow-md"
               }`}>
               <div className="absolute top-4 right-4 opacity-10">
