@@ -16,6 +16,7 @@ import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import FloatingActions from "@/components/FloatingActions";
 import LoadingScreen from "@/components/LoadingScreen";
+import RevealObserver from "@/components/RevealObserver";
 
 export const metadata: Metadata = {
   title: "Apexify — We Build Websites, Mobile Apps & Custom Software That Scale",
@@ -77,6 +78,7 @@ export default function HomePage() {
       />
       <LoadingScreen />
       <ScrollProgress />
+      <RevealObserver />
       <Navbar />
       <main id="main-content">
         <Hero />

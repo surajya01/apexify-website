@@ -56,11 +56,13 @@ export default function Navbar() {
           {/* Logo */}
           <button onClick={() => handleNav("#home")} className="flex items-center group" aria-label="Apexify — Home">
             <Image
-              src={scrolled ? "/logo.png" : "/nlogo.webp"}
+              src="/nlogo.webp"
               alt="Apexify"
               width={140}
               height={42}
-              className="h-10 w-auto group-hover:opacity-90 transition-opacity"
+              className={`h-9 w-auto group-hover:opacity-90 transition-all duration-300 ${
+                scrolled ? "brightness-0" : ""
+              }`}
               priority
             />
           </button>
