@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "We build websites, mobile apps, custom software & automation systems that help businesses grow faster. 100+ projects delivered. 50+ happy clients.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "Apexify — Full-Service Digital Agency",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "Apexify — Full-Service Digital Agency",
     description:
       "Web development, mobile apps, custom software & automation. 100+ projects. 50+ happy clients.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
     creator: "@apexify",
   },
   robots: {

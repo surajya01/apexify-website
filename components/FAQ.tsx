@@ -69,7 +69,7 @@ export default function FAQ() {
           {/* Right accordion */}
           <div className="lg:col-span-3 space-y-3">
             {faqs.map((faq, i) => (
-              <div key={i} className={`bg-white rounded-2xl border overflow-hidden transition-all duration-300 reveal ${
+              <div key={i} className={`bg-white rounded-2xl border overflow-hidden transition-all duration-300 ${
                 openIndex === i ? "border-blue-200 shadow-md shadow-blue-50" : "border-slate-100 shadow-sm"
               }`}>
                 <button onClick={() => setOpenIndex(openIndex === i ? null : i)}

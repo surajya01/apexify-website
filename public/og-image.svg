@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0A2540"/>
+  <!-- Gradient overlay -->
+  <defs>
+    <radialGradient id="g1" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0B5ED7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0A2540" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="80%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#00BFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0A2540" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+
+  <!-- A icon -->
+  <polygon points="120,420 200,180 240,180 160,420" fill="#3b82f6"/>
+  <polygon points="280,420 200,180 240,180 320,420" fill="rgba(255,255,255,0.85)"/>
+  <polygon points="130,320 305,265 315,295 140,350" fill="#3b82f6" opacity="0.9"/>
+
+  <!-- Text -->
+  <text x="360" y="360" font-family="Sora,Inter,sans-serif" font-weight="700" font-size="100" fill="white" letter-spacing="-2">apex</text>
+  <text x="720" y="360" font-family="Sora,Inter,sans-serif" font-weight="700" font-size="100" fill="#3b82f6" letter-spacing="-2">i</text>
+  <text x="752" y="360" font-family="Sora,Inter,sans-serif" font-weight="700" font-size="100" fill="white" letter-spacing="-2">fy</text>
+
+  <!-- Tagline -->
+  <text x="360" y="420" font-family="Inter,sans-serif" font-weight="400" font-size="28" fill="rgba(255,255,255,0.55)" letter-spacing="1">Full-Service Digital Agency</text>
+</svg>

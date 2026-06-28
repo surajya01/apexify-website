@@ -316,6 +316,7 @@ button, a { min-height: 44px; }
 @media (prefers-reduced-motion: reduce) {
   .marquee, .marquee-reverse, .animate-float,
   .animate-float-delayed, .animate-blob, .animate-blink,
+  .animate-fade-in, .animate-fade-up,
   .reveal, .reveal-left, .reveal-right {
     animation: none !important;
     transition: none !important;
