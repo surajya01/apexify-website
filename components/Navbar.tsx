@@ -1,15 +1,15 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import ApexifyLogo from "@/components/ApexifyLogo";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Home",      href: "#home" },
+  { label: "About",     href: "#about" },
+  { label: "Services",  href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Process",   href: "#process" },
+  { label: "Contact",   href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -52,12 +52,19 @@ export default function Navbar() {
       role="banner"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+
           {/* Logo */}
           <button onClick={() => handleNav("#home")} className="flex items-center group" aria-label="Apexify — Home">
-            <ApexifyLogo
-              variant={scrolled ? "dark" : "light"}
-              className="h-9 w-auto group-hover:opacity-90 transition-opacity"
+            <Image
+              src="/logo.webp"
+              alt="Apexify"
+              width={130}
+              height={40}
+              className={`h-8 lg:h-10 w-auto transition-all duration-300 group-hover:opacity-90 ${
+                scrolled ? "brightness-0" : "brightness-100"
+              }`}
+              priority
             />
           </button>
 
@@ -84,12 +91,14 @@ export default function Navbar() {
             })}
           </ul>
 
+          {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <button onClick={() => handleNav("#contact")} className="btn-primary text-sm">
               Get Free Consultation
             </button>
           </div>
 
+          {/* Mobile toggle */}
           <button
             onClick={() => setOpen(!open)}
             className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? "text-slate-700 hover:bg-slate-100" : "text-white hover:bg-white/10"}`}
@@ -122,7 +131,7 @@ export default function Navbar() {
                 );
               })}
               <li className="px-4 py-3">
-                <button onClick={() => handleNav("#contact")} className="btn-primary w-full text-sm justify-center">
+                <button onClick={() => handleNav("#contact")} className="btn-primary w-full justify-center text-sm">
                   Get Free Consultation
                 </button>
               </li>
