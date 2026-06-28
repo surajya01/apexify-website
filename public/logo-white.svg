@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Left leg of A -->
+  <polygon points="12,52 32,8 42,8 22,52" fill="url(#blueGradW)"/>
+  <!-- Right leg of A -->
+  <polygon points="52,52 32,8 42,8 62,52" fill="white" opacity="0.9"/>
+  <!-- Slash crossbar -->
+  <polygon points="16,36 58,24 60,30 18,42" fill="url(#blueGradW)" opacity="0.85"/>
+
+  <!-- Text white version -->
+  <text x="74" y="40" font-family="Sora, Inter, sans-serif" font-weight="700" font-size="22" fill="white" letter-spacing="-0.5">apex</text>
+  <text x="136" y="40" font-family="Sora, Inter, sans-serif" font-weight="700" font-size="22" fill="#22d3ee" letter-spacing="-0.5">i</text>
+  <text x="143" y="40" font-family="Sora, Inter, sans-serif" font-weight="700" font-size="22" fill="white" letter-spacing="-0.5">fy</text>
+
+  <defs>
+    <linearGradient id="blueGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+</svg>
