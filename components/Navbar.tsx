@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import ApexifyLogo from "@/components/ApexifyLogo";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -55,15 +55,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button onClick={() => handleNav("#home")} className="flex items-center group" aria-label="Apexify — Home">
-            <Image
-              src="/nlogo.webp"
-              alt="Apexify"
-              width={140}
-              height={42}
-              className={`h-9 w-auto group-hover:opacity-90 transition-all duration-300 ${
-                scrolled ? "brightness-0" : ""
-              }`}
-              priority
+            <ApexifyLogo
+              variant={scrolled ? "dark" : "light"}
+              className="h-9 w-auto group-hover:opacity-90 transition-opacity"
             />
           </button>
 

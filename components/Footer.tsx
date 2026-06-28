@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import ApexifyLogo from "@/components/ApexifyLogo";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const services = ["Website Development", "Mobile App Development", "Custom Software", "Admin Dashboard", "SEO & Marketing", "Business Automation", "UI/UX Design", "Cloud Solutions"];
@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <button onClick={() => scrollTo("#home")} className="flex items-center mb-4 group" aria-label="Apexify home">
-              <Image src="/nlogo.webp" alt="Apexify" width={130} height={40} className="h-8 lg:h-9 w-auto group-hover:opacity-90 transition-opacity" />
+              <ApexifyLogo variant="light" className="h-8 w-auto group-hover:opacity-90 transition-opacity" />
             </button>
             <p className="text-slate-400 text-sm leading-relaxed mb-5">Transforming ideas into digital success. We build scalable, beautiful, and impactful digital products for startups and enterprises worldwide.</p>
             <ul className="space-y-2">

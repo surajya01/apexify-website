@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import ApexifyLogo from "@/components/ApexifyLogo";
 import { Mail, Phone, MapPin, Send, MessageCircle, CheckCircle, Loader, Clock, Shield, Users, Zap } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
@@ -53,7 +53,7 @@ export default function Contact() {
             <div className="relative">
               {/* Logo */}
               <div className="mb-8 lg:mb-10">
-                <Image src="/nlogo.webp" alt="Apexify" width={130} height={40} className="h-8 lg:h-9 w-auto" />
+                <ApexifyLogo variant="light" className="h-8 lg:h-9 w-auto" />
               </div>
               <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 lg:mb-3">Start your project today</h3>
               <p className="text-white/55 text-sm leading-relaxed mb-6 lg:mb-8">We build digital products that grow businesses. Fill out the form and our team will get back to you within one business day.</p>
