@@ -5,308 +5,376 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Our Software Development Process | Apexify Software Solutions</title>
   <meta name="description" content="Discover Apexify's end-to-end agile software development process. From architecture and discovery to continuous delivery, QA, and scalable deployment.">
-  <!-- Material Symbols Outlined -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fonts & Material Symbols -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS -->
-    <!-- Tailwind CSS (Local Build) -->
+  <!-- Tailwind CSS (Local Build) -->
   <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
-<!-- Apexify Header / Navigation Anchor -->
-<header class="sticky top-0 z-50 bg-surface/95 backdrop-blur border-b border-outline-variant/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between whitespace-nowrap">
-<!-- Brand -->
-<a class="flex items-center gap-3 text-primary focus:outline-none" href="home.html"><img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain"></a>
-<!-- Desktop Navigation Links -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="services.html">Services</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="why-us.html">Why Us</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="our_work.html">Work</a>
-<a class="text-primary text-sm font-medium transition-colors border-b-2 border-primary py-[22px]" href="process.html">Process</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="solution.html">Architecture</a>
-</nav>
-<!-- CTAs -->
-<div class="flex items-center gap-3">
-<a class="hidden sm:inline-flex items-center justify-center rounded-lg h-10 px-4 bg-surface-container text-on-surface hover:bg-surface-container-high text-sm font-semibold border border-outline-variant/40 transition-colors" href="our_work.html">
-            View Our Work
-          </a>
-<a class="inline-flex items-center gap-1.5 justify-center rounded-lg h-10 px-4 bg-primary-container text-surface-container-lowest hover:bg-primary text-sm font-semibold tracking-[0.015em] shadow-sm transition-all" href="contacts.html">
-<span class="">Start a Project</span>
-<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</div>
-</header>
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 relative overflow-hidden">
-  <!-- Dynamic Animated Hero -->
-  <section class="relative py-24 md:py-32 rounded-3xl overflow-hidden mb-24 border border-outline-variant/30 shadow-sm">
-    <!-- Animated Glowing Background -->
-    <div class="absolute inset-0 bg-surface-container-lowest"></div>
-    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px] animate-glow pointer-events-none"></div>
-    <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-secondary/15 rounded-full blur-[150px] animate-pulse-glow pointer-events-none"></div>
-    
-    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in-up">
-      <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-surface-container border border-outline-variant/50">
-        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-        <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant font-code-sm">Our Methodology</span>
+<body class="bg-[#F8FAFC] text-slate-800 font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-[#071739] via-[#0B245E] to-[#0A3078] border-b border-blue-900/40 text-slate-200 py-2.5 px-4 text-xs font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/20 text-cyan-300 border border-cyan-400/30 text-[11px] font-semibold uppercase tracking-wider shadow-xs">
+          <span class="size-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          Agile Methodology
+        </span>
+        <span class="text-slate-200 text-xs sm:text-sm">
+          Bi-Weekly Sprints • Real-Time Staging Previews • Zero-Downtime Deployment
+        </span>
       </div>
-      <h1 class="text-5xl md:text-7xl font-extrabold text-on-surface mb-8 leading-tight tracking-tight">
-        Transparent, Predictable <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Engineering</span>
-      </h1>
-      <p class="text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed max-w-3xl mx-auto">
-        From initial architecture to planetary deployment, our end-to-end agile software development process is designed to eliminate ambiguity, minimize technical debt, and maximize ROI.
-      </p>
+      <a class="inline-flex items-center gap-1.5 text-amber-300 hover:text-white text-xs font-semibold group transition-all" href="contacts.html">
+        Initiate Sprint Scoping
+        <span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
     </div>
-  </section>
+  </aside>
 
-  <!-- Process Interactive Grid Layout -->
-  <section class="max-w-7xl mx-auto relative">
-    <!-- Connecting Line Background for Desktop -->
-    <div class="hidden lg:block absolute top-[120px] left-8 right-8 h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent z-0"></div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-      
-      <!-- Step 1 -->
-      <div class="group relative bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.1s;">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
-        <div class="relative z-10">
-          <span class="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-primary/20 to-transparent mb-6 block">01</span>
-          <h3 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Architecture & Discovery</h3>
-          <p class="text-on-surface-variant text-base leading-relaxed mb-8">
-            We dive deep into your business objectives to craft a resilient system topology. We establish the foundation for scalable software development by defining clear milestones, technology stacks, and schemas.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Domain Modeling</span>
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Stack Selection</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Step 2 -->
-      <div class="group relative bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.2s;">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
-        <div class="relative z-10">
-          <span class="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-primary/20 to-transparent mb-6 block">02</span>
-          <h3 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">UX/UI Prototyping</h3>
-          <p class="text-on-surface-variant text-base leading-relaxed mb-8">
-            Before writing a single line of code, our design teams map out every user journey. We create interactive, high-fidelity prototypes to validate the user experience and secure stakeholder alignment early on.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Figma Prototyping</span>
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Design Tokens</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Step 3 -->
-      <div class="group relative bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.3s;">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
-        <div class="relative z-10">
-          <span class="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-primary/20 to-transparent mb-6 block">03</span>
-          <h3 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Agile Build Sprints</h3>
-          <p class="text-on-surface-variant text-base leading-relaxed mb-8">
-            We execute through continuous delivery and bi-weekly agile sprints. You gain full visibility into our codebase with live staging environments, enabling real-time feedback loops and rapid iteration.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Continuous Delivery</span>
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">CI/CD Pipelines</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Step 4 -->
-      <div class="group relative bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.4s;">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
-        <div class="relative z-10">
-          <span class="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-primary/20 to-transparent mb-6 block">04</span>
-          <h3 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">QA & Security</h3>
-          <p class="text-on-surface-variant text-base leading-relaxed mb-8">
-            Quality Assurance is non-negotiable. Our web applications undergo rigorous penetration testing, automated regression suites, and load testing simulating massive concurrent sessions.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Automated Testing</span>
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Vulnerability Scans</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Step 5 -->
-      <div class="group relative bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.5s;">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
-        <div class="relative z-10">
-          <span class="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-primary/20 to-transparent mb-6 block">05</span>
-          <h3 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Launch & Scale</h3>
-          <p class="text-on-surface-variant text-base leading-relaxed mb-8">
-            Deploying to production with zero downtime is an art. We manage complex DNS migrations, configure canary rollouts, and establish comprehensive telemetry dashboards for real-time observability.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Zero-Downtime</span>
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Telemetry</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Step 6 -->
-      <div class="group relative bg-surface-container-lowest rounded-2xl p-8 border border-outline-variant/40 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-primary/50 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.6s;">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
-        <div class="relative z-10">
-          <span class="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-primary/20 to-transparent mb-6 block">06</span>
-          <h3 class="text-2xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Growth & Iteration</h3>
-          <p class="text-on-surface-variant text-base leading-relaxed mb-8">
-            Post-launch, our engagement doesn't end. We continuously analyze user behavior, refine performance bottlenecks, and iterate on feature sets to guarantee sustained market growth and retention.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Performance Tuning</span>
-            <span class="px-3 py-1.5 bg-primary/10 text-on-primary-fixed-variant rounded-lg text-xs font-bold shadow-sm">Feature Iterations</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Redesigned Immersive CTA Section -->
-  <section class="mt-20 mb-20 relative w-full overflow-hidden bg-surface-container-lowest border-y border-outline-variant/30 py-32 group">
-    <!-- Animated Geometric Background (Pure CSS) -->
-    <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none overflow-hidden">
-      <div class="absolute w-[800px] h-[800px] border-[1px] border-primary rounded-full animate-[spin_20s_linear_infinite] border-dashed"></div>
-      <div class="absolute w-[600px] h-[600px] border-[2px] border-secondary rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
-      <div class="absolute w-[400px] h-[400px] border-[1px] border-tertiary rounded-full animate-[spin_10s_linear_infinite] border-dotted"></div>
-    </div>
-    
-    <!-- Glowing orbs -->
-    <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none group-hover:bg-primary/20 transition-all duration-700"></div>
-    <div class="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-secondary/20 transition-all duration-700"></div>
-    
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
-      <div class="max-w-2xl">
-        <div class="inline-flex items-center gap-2 mb-6">
-          <span class="w-10 h-[2px] bg-secondary"></span>
-          <span class="text-secondary font-bold tracking-widest uppercase text-sm font-code-sm">Next Steps</span>
-        </div>
-        <h2 class="text-4xl md:text-5xl font-black text-on-surface mb-6 tracking-tight leading-tight">Ready to elevate your <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">engineering?</span></h2>
-        <p class="text-on-surface-variant text-lg leading-relaxed mb-0">Partner with our expert developers and architects to transform your ideas into highly scalable, secure, and performant web applications.</p>
-      </div>
-      
-      <div class="shrink-0 flex flex-col items-center gap-4">
-        <a class="relative inline-flex items-center justify-center overflow-hidden rounded-full p-1 group/btn" href="contacts.html">
-          <!-- Animated gradient border -->
-          <span class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,rgba(0,98,160,0.1)_0%,rgba(59,218,231,1)_50%,rgba(0,98,160,0.1)_100%)]"></span>
-          <!-- Liquid/Ripple Overlay on hover -->
-          <span class="absolute inset-1 rounded-full bg-surface-container-lowest opacity-0 group-hover/btn:opacity-10 transition-opacity duration-300 z-10"></span>
-          <span class="relative z-20 inline-flex items-center gap-2 h-14 px-8 justify-center rounded-full bg-surface-container-lowest text-on-surface font-bold text-base group-hover/btn:bg-surface-container group-hover/btn:text-primary transition-all duration-300 shadow-lg">
-            Discuss Your Project
-            <span class="material-symbols-outlined text-[20px] text-primary group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-          </span>
+  <!-- Sticky Glass Header -->
+  <header class="sticky top-0 z-50 glass-header border-b border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand -->
+      <a class="flex items-center gap-3 text-primary focus:outline-none group" href="home.html">
+        <img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-200">
+      </a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="services.html">Services</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="why-us.html">Why Us</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="our_work.html">Work</a>
+        <a class="text-primary font-bold py-1 relative after:w-full after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0" href="process.html">Process</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="solution.html">Architecture</a>
+      </nav>
+      <!-- CTAs -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center rounded-xl h-10 px-4 bg-slate-100 hover:bg-slate-200/80 text-slate-800 hover:text-primary text-sm font-semibold border border-slate-200/80 transition-all duration-200" href="our_work.html">View Our Work</a>
+        <a class="hidden md:inline-flex items-center gap-1.5 justify-center rounded-xl h-10 px-5 bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 text-sm font-semibold tracking-wide active:scale-95" href="contacts.html">
+          <span>Start a Project</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
         </a>
-        <span class="text-xs text-on-surface-variant flex items-center gap-1 font-medium"><span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span> No commitment required</span>
+        <!-- Hamburger Button -->
+        <button id="menu-button" aria-label="Open menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-10 h-10 rounded-xl text-slate-700 hover:bg-slate-100 border border-slate-200/60 transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
       </div>
     </div>
-  </section>
-  <!-- Technologies Section (Pure CSS Layouts) -->
-  <section class="py-24 bg-surface-container-lowest border-y border-outline-variant/30 relative overflow-hidden animate-fade-in-up">
-    <!-- Background decorative elements -->
-    <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-primary/5 via-secondary/5 to-transparent rounded-bl-full pointer-events-none"></div>
-    <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-tertiary/5 via-primary/5 to-transparent rounded-tr-full pointer-events-none"></div>
     
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-3 block font-label-caps animate-pulse">Our Tech Stack</span>
-        <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface mb-5 tracking-tight hover:scale-105 transition-transform duration-500">Modern Architecture</h2>
-        <p class="text-on-surface-variant text-lg max-w-2xl mx-auto leading-relaxed">
-          We leverage enterprise-grade tools and frameworks to deliver scalable, secure, and high-performance solutions.
-        </p>
+    <!-- Mobile Menu Drawer (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-4 space-y-1.5 shadow-xl shadow-slate-900/5 relative z-50">
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="services.html">Services</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="why-us.html">Why Us</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="our_work.html">Work</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-semibold text-primary bg-primary/5 transition-colors" href="process.html">Process</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="solution.html">Architecture</a>
+      <div class="pt-2 border-t border-slate-200/80">
+        <a class="block w-full text-center mt-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm shadow-md transition-all hover:shadow-lg active:scale-95" href="contacts.html">Start a Project</a>
       </div>
+    </div>
+  </header>
+  <script>
+  (function(){
+    var btn = document.getElementById('menu-button') || document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if(btn && menu){
+      btn.addEventListener('click', function(){
+        var isHidden = menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isHidden));
+        var icon = btn.querySelector('.material-symbols-outlined');
+        if(icon) {
+          icon.textContent = isHidden ? 'menu' : 'close';
+        }
+      });
+    }
+  })();
+  </script>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20 relative overflow-hidden">
+    <!-- Dynamic Animated Hero -->
+    <section class="relative py-16 md:py-24 rounded-3xl overflow-hidden mb-16 border border-slate-200/80 shadow-soft-sm bg-[url('images/hero_bg_process.jpg')] bg-cover bg-center bg-no-repeat">
+      <!-- Gradient Overlays -->
+      <div class="absolute inset-0 bg-gradient-to-b from-white/92 via-white/85 to-[#F8FAFC]/95 backdrop-blur-[2px]"></div>
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-cyan-400/20 via-blue-500/15 to-transparent rounded-full blur-[140px] pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-purple-500/20 via-pink-400/15 to-transparent rounded-full blur-[140px] pointer-events-none"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-r from-blue-400/10 via-purple-400/15 to-amber-300/10 rounded-full blur-[120px] pointer-events-none"></div>
       
-      <!-- Tech Stack Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 relative">
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-white/90 border border-slate-200/80 shadow-soft-xs">
+          <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          <span class="text-xs font-bold uppercase tracking-widest text-primary font-code-sm">Our Methodology</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.1] tracking-tight font-display">
+          Transparent, Predictable <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-[#0070BA]">Engineering</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto mb-10">
+          From initial architecture to zero-downtime deployment, our end-to-end agile software development process is designed to eliminate ambiguity, minimize technical debt, and maximize your business ROI.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a class="inline-flex items-center gap-2 justify-center rounded-xl bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary/30 px-8 py-3.5 text-sm font-bold tracking-wide uppercase transition-all duration-300 shadow-soft-sm active:scale-95" href="contacts.html">
+            <span>Start Your Build</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+          <a class="inline-flex items-center gap-2 justify-center rounded-xl border border-slate-300 bg-white text-slate-700 hover:border-primary hover:text-primary px-8 py-3.5 text-sm font-bold tracking-wide uppercase transition-all duration-300 shadow-soft-xs hover:shadow-soft-sm" href="solution.html">
+            <span class="material-symbols-outlined text-[18px]">account_tree</span>
+            Explore Architecture
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Interactive Grid Layout -->
+    <section class="max-w-7xl mx-auto relative mb-20">
+      <!-- Connecting Line Background for Desktop with Vivid Gradient -->
+      <div class="hidden lg:block absolute top-[130px] left-8 right-8 h-1 bg-gradient-to-r from-sky-400 via-purple-400 via-amber-400 to-emerald-400 opacity-40 z-0 pointer-events-none rounded-full"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
         
-        <!-- Frontend Card -->
-        <div class="group relative bg-surface-container-low/50 backdrop-blur-md rounded-3xl p-8 border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:bg-surface-container-low transition-all duration-300">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-secondary/40 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 blur transition duration-500 pointer-events-none"></div>
-          <div class="relative z-10">
-            <div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 text-secondary border border-secondary/20 shadow-[inset_0_2px_4px_rgba(255,255,255,0.6)]">
-              <span class="material-symbols-outlined text-[28px]">web</span>
+        <!-- Step 1 (Sky Blue) -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-sky-200/80 shadow-soft-xs hover:shadow-soft-lg hover:shadow-sky-500/15 hover:-translate-y-1.5 hover:border-sky-400 transition-all duration-300 flex flex-col">
+          <div class="relative z-10 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-5xl font-black text-sky-200 group-hover:text-sky-600 transition-colors duration-300">01</span>
+              <div class="w-11 h-11 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center group-hover:bg-sky-600 group-hover:text-white transition-all duration-300 border border-sky-100">
+                <span class="material-symbols-outlined text-[24px]">architecture</span>
+              </div>
             </div>
-            <h3 class="text-xl font-bold text-on-surface mb-4">Frontend</h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-secondary group-hover:border-secondary/30 transition-colors">HTML/CSS</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-secondary group-hover:border-secondary/30 transition-colors">Tailwind CSS</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-secondary group-hover:border-secondary/30 transition-colors">Bootstrap</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-secondary group-hover:border-secondary/30 transition-colors">JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Backend Card -->
-        <div class="group relative bg-surface-container-low/50 backdrop-blur-md rounded-3xl p-8 border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:bg-surface-container-low transition-all duration-300">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-primary/40 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 blur transition duration-500 pointer-events-none"></div>
-          <div class="relative z-10">
-            <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary border border-primary/20 shadow-[inset_0_2px_4px_rgba(255,255,255,0.6)]">
-              <span class="material-symbols-outlined text-[28px]">dns</span>
-            </div>
-            <h3 class="text-xl font-bold text-on-surface mb-4">Backend</h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-primary group-hover:border-primary/30 transition-colors">Java</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-primary group-hover:border-primary/30 transition-colors">PHP</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-primary group-hover:border-primary/30 transition-colors">Node.js</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-primary group-hover:border-primary/30 transition-colors">Python</span>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-sky-600 transition-colors">Architecture &amp; Discovery</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+              We dive deep into your business objectives to craft a resilient system topology. We establish the foundation for scalable software development by defining clear milestones, technology stacks, and data schemas.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
+              <span class="px-3 py-1 bg-sky-50 text-sky-700 rounded-lg text-xs font-bold border border-sky-100">Domain Modeling</span>
+              <span class="px-3 py-1 bg-sky-50 text-sky-700 rounded-lg text-xs font-bold border border-sky-100">Stack Selection</span>
             </div>
           </div>
         </div>
 
-        <!-- Database Card -->
-        <div class="group relative bg-surface-container-low/50 backdrop-blur-md rounded-3xl p-8 border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:bg-surface-container-low transition-all duration-300">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-tertiary/40 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 blur transition duration-500 pointer-events-none"></div>
-          <div class="relative z-10">
-            <div class="w-14 h-14 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-6 text-tertiary border border-tertiary/20 shadow-[inset_0_2px_4px_rgba(255,255,255,0.6)]">
-              <span class="material-symbols-outlined text-[28px]">database</span>
+        <!-- Step 2 (Cyan / Teal) -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-cyan-200/80 shadow-soft-xs hover:shadow-soft-lg hover:shadow-cyan-500/15 hover:-translate-y-1.5 hover:border-cyan-400 transition-all duration-300 flex flex-col">
+          <div class="relative z-10 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-5xl font-black text-cyan-200 group-hover:text-cyan-600 transition-colors duration-300">02</span>
+              <div class="w-11 h-11 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 border border-cyan-100">
+                <span class="material-symbols-outlined text-[24px]">draw</span>
+              </div>
             </div>
-            <h3 class="text-xl font-bold text-on-surface mb-4">Database & Auth</h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-tertiary group-hover:border-tertiary/30 transition-colors">MySQL</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-tertiary group-hover:border-tertiary/30 transition-colors">Firebase</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-tertiary group-hover:border-tertiary/30 transition-colors">Supabase</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-tertiary group-hover:border-tertiary/30 transition-colors">PostgreSQL</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile & CMS Card -->
-        <div class="group relative bg-surface-container-low/50 backdrop-blur-md rounded-3xl p-8 border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-2 hover:bg-surface-container-low transition-all duration-300">
-          <div class="absolute -inset-0.5 bg-gradient-to-br from-on-surface/30 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 blur transition duration-500 pointer-events-none"></div>
-          <div class="relative z-10">
-            <div class="w-14 h-14 bg-on-surface/5 rounded-2xl flex items-center justify-center mb-6 text-on-surface border border-outline-variant/20 shadow-[inset_0_2px_4px_rgba(255,255,255,0.6)]">
-              <span class="material-symbols-outlined text-[28px]">smartphone</span>
-            </div>
-            <h3 class="text-xl font-bold text-on-surface mb-4">Mobile & CMS</h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-on-surface-variant group-hover:border-on-surface/30 transition-colors">Flutter</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-on-surface-variant group-hover:border-on-surface/30 transition-colors">React Native</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-on-surface-variant group-hover:border-on-surface/30 transition-colors">WordPress</span>
-              <span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant/30 rounded-lg text-sm font-semibold text-on-surface group-hover:text-on-surface-variant group-hover:border-on-surface/30 transition-colors">Shopify</span>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-cyan-600 transition-colors">UX/UI Prototyping</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+              Before writing a single line of code, our design teams map out every user journey. We create interactive, high-fidelity prototypes to validate the user experience and secure stakeholder alignment early on.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
+              <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-lg text-xs font-bold border border-cyan-100">Figma Prototyping</span>
+              <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-lg text-xs font-bold border border-cyan-100">Design Tokens</span>
             </div>
           </div>
         </div>
 
+        <!-- Step 3 (Purple / Violet) -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-purple-200/80 shadow-soft-xs hover:shadow-soft-lg hover:shadow-purple-500/15 hover:-translate-y-1.5 hover:border-purple-400 transition-all duration-300 flex flex-col">
+          <div class="relative z-10 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-5xl font-black text-purple-200 group-hover:text-purple-600 transition-colors duration-300">03</span>
+              <div class="w-11 h-11 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 border border-purple-100">
+                <span class="material-symbols-outlined text-[24px]">code</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-purple-600 transition-colors">Agile Build Sprints</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+              We execute through continuous delivery and bi-weekly agile sprints. You gain full visibility into our codebase with live staging environments, enabling real-time feedback loops and rapid iteration.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
+              <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-lg text-xs font-bold border border-purple-100">Continuous Delivery</span>
+              <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-lg text-xs font-bold border border-purple-100">CI/CD Pipelines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 (Amber / Orange) -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-amber-200/80 shadow-soft-xs hover:shadow-soft-lg hover:shadow-amber-500/15 hover:-translate-y-1.5 hover:border-amber-400 transition-all duration-300 flex flex-col">
+          <div class="relative z-10 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-5xl font-black text-amber-200 group-hover:text-amber-500 transition-colors duration-300">04</span>
+              <div class="w-11 h-11 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 border border-amber-100">
+                <span class="material-symbols-outlined text-[24px]">verified_user</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">QA &amp; Security Audits</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+              Quality Assurance is non-negotiable. Our web applications undergo rigorous penetration testing, automated regression suites, and load testing simulating massive concurrent sessions.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
+              <span class="px-3 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold border border-amber-100">Automated Testing</span>
+              <span class="px-3 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold border border-amber-100">OWASP Hardening</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 (Emerald / Green) -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-emerald-200/80 shadow-soft-xs hover:shadow-soft-lg hover:shadow-emerald-500/15 hover:-translate-y-1.5 hover:border-emerald-400 transition-all duration-300 flex flex-col">
+          <div class="relative z-10 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-5xl font-black text-emerald-200 group-hover:text-emerald-600 transition-colors duration-300">05</span>
+              <div class="w-11 h-11 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 border border-emerald-100">
+                <span class="material-symbols-outlined text-[24px]">rocket_launch</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">Launch &amp; Scale</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+              Deploying to production with zero downtime is an art. We manage complex DNS migrations, configure canary rollouts, and establish comprehensive telemetry dashboards for real-time observability.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
+              <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-bold border border-emerald-100">Zero-Downtime</span>
+              <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-bold border border-emerald-100">Telemetry Live</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 (Rose / Pink) -->
+        <div class="group relative bg-white rounded-3xl p-8 border border-rose-200/80 shadow-soft-xs hover:shadow-soft-lg hover:shadow-rose-500/15 hover:-translate-y-1.5 hover:border-rose-400 transition-all duration-300 flex flex-col">
+          <div class="relative z-10 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-5xl font-black text-rose-200 group-hover:text-rose-600 transition-colors duration-300">06</span>
+              <div class="w-11 h-11 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center group-hover:bg-rose-600 group-hover:text-white transition-all duration-300 border border-rose-100">
+                <span class="material-symbols-outlined text-[24px]">trending_up</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-rose-600 transition-colors">Growth &amp; Iteration</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+              Post-launch, our engagement doesn't end. We continuously analyze user behavior, refine performance bottlenecks, and iterate on feature sets to guarantee sustained market growth and retention.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100 mt-auto">
+              <span class="px-3 py-1 bg-rose-50 text-rose-700 rounded-lg text-xs font-bold border border-rose-100">Performance Tuning</span>
+              <span class="px-3 py-1 bg-rose-50 text-rose-700 rounded-lg text-xs font-bold border border-rose-100">Feature Iterations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modern CTA Section -->
+    <section class="mb-16 relative w-full overflow-hidden bg-gradient-to-r from-[#071739] via-[#0B245E] to-[#0062A0] rounded-3xl py-14 px-8 md:px-14 shadow-soft-xl group">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,rgba(0,166,255,0.18),transparent_60%)] -translate-y-1/2 translate-x-1/3 group-hover:bg-[radial-gradient(circle_at_center,rgba(0,166,255,0.28),transparent_70%)] transition-colors duration-700 pointer-events-none"></div>
+      
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+        <div class="max-w-2xl">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <span class="w-8 h-[2px] bg-cyan-400"></span>
+            <span class="text-cyan-300 font-bold tracking-widest uppercase text-xs font-code-sm">Next Steps</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight leading-tight">
+            Ready to elevate your <span class="text-cyan-300">engineering pipeline?</span>
+          </h2>
+          <p class="text-slate-200 text-base md:text-lg leading-relaxed">
+            Partner with our expert developers and architects to transform your concepts into highly scalable, secure, and performant web applications.
+          </p>
+        </div>
+        
+        <div class="shrink-0 flex flex-col items-center gap-3">
+          <a class="inline-flex items-center gap-2 justify-center rounded-xl h-12 px-8 bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-sm tracking-wide transition-all duration-200 shadow-soft-md hover:shadow-soft-lg active:scale-95" href="contacts.html">
+            <span>Discuss Your Project</span>
+            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+          </a>
+          <span class="text-xs text-slate-300 flex items-center gap-1 font-medium">
+            <span class="material-symbols-outlined text-[14px] text-cyan-300">check_circle</span>
+            No upfront commitment required
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Categorized Architecture Grid -->
+    <section class="py-16 bg-white border border-slate-200/80 rounded-3xl shadow-soft-xs relative overflow-hidden mb-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-14">
+          <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-3 block">Engineering Stack</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Modern Architecture</h2>
+          <p class="text-slate-600 text-base max-w-2xl mx-auto leading-relaxed">
+            We leverage enterprise-grade tools and frameworks to deliver scalable, secure, and high-performance solutions.
+          </p>
+        </div>
+        
+        <!-- Tech Stack Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          
+          <!-- Frontend Card -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft-xs hover:shadow-soft-md hover:bg-white hover:border-secondary/40 transition-all duration-200 flex flex-col">
+            <div class="w-12 h-12 bg-cyan-100 text-secondary rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[26px]">web</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">Frontend</h3>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">HTML5/CSS3</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Tailwind CSS</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">JavaScript ES6+</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Backend Card -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft-xs hover:shadow-soft-md hover:bg-white hover:border-primary/40 transition-all duration-200 flex flex-col">
+            <div class="w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[26px]">dns</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">Backend</h3>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Java / Spring</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">PHP 8+</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Node.js</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">REST / GraphQL</span>
+            </div>
+          </div>
+
+          <!-- Database Card -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft-xs hover:shadow-soft-md hover:bg-white hover:border-amber-400/50 transition-all duration-200 flex flex-col">
+            <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[26px]">database</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">Database &amp; Cloud</h3>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">MySQL</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">PostgreSQL</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Firebase</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Supabase</span>
+            </div>
+          </div>
+
+          <!-- Mobile & CMS Card -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 shadow-soft-xs hover:shadow-soft-md hover:bg-white hover:border-secondary/40 transition-all duration-200 flex flex-col">
+            <div class="w-12 h-12 bg-cyan-100 text-secondary rounded-xl flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[26px]">smartphone</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">Mobile &amp; CMS</h3>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Flutter</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">React Native</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">WordPress</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200/80 rounded-lg text-xs font-semibold text-slate-700">Shopify</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Standardized Footer -->
+  <footer class="border-t border-slate-200/80 bg-slate-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <a href="home.html" class="flex items-center gap-2" aria-label="Apexify Home">
+          <img src="images/logo.png" alt="Apexify Software Solutions" class="h-9 w-auto object-contain">
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 font-code-sm text-center sm:text-left">© 2026 Apexify. Rooted in architectural precision.</p>
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-600 font-medium">
+        <a class="hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+        <a class="hover:text-primary transition-colors" href="terms-and-conditions.html">Terms of Service</a>
+        <a class="hover:text-primary transition-colors" href="solution.html">Security Architecture</a>
       </div>
     </div>
-  </section>
-</main>
-<!-- Footer minimal note -->
-<footer class="border-t border-outline-variant bg-surface-container-low py-10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <div class="flex items-center gap-2"><a href="home.html" class="flex items-center gap-2" aria-label="Apexify Home"><img src="images/logo.png" alt="Apexify Software Solutions" class="h-9 w-auto object-contain"></a></div>
-    <p class="text-xs text-on-surface-variant font-code-sm">© 2025 Apexify. Rooted in architectural precision.</p>
-    <div class="flex gap-4 text-xs text-on-surface-variant">
-      <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
-      <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
-      <a class="hover:text-primary transition-colors" href="#">Security Architecture</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy | Apexify Software Solutions</title>
+  <meta name="description" content="Read the Apexify Privacy Policy to understand how we collect, use, and protect personal information.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS (Local Build) -->
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+  <!-- Sticky Glass Header -->
+  <header class="sticky top-0 z-50 glass-header border-b border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand -->
+      <a class="flex items-center gap-3 text-primary focus:outline-none group" href="home.html">
+        <img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-200">
+      </a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="services.html">Services</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="why-us.html">Why Us</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="our_work.html">Work</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="process.html">Process</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="solution.html">Architecture</a>
+      </nav>
+      <!-- CTAs -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center rounded-xl h-10 px-4 bg-slate-100 hover:bg-slate-200/80 text-slate-800 hover:text-primary text-sm font-semibold border border-slate-200/80 transition-all duration-200" href="our_work.html">View Our Work</a>
+        <a class="hidden md:inline-flex items-center gap-1.5 justify-center rounded-xl h-10 px-5 bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 text-sm font-semibold tracking-wide active:scale-95" href="contacts.html">
+          <span>Start a Project</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <!-- Hamburger Button -->
+        <button id="menu-button" aria-label="Open menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-10 h-10 rounded-xl text-slate-700 hover:bg-slate-100 border border-slate-200/60 transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Drawer (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-4 space-y-1.5 shadow-xl shadow-slate-900/5 relative z-50">
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="services.html">Services</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="why-us.html">Why Us</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="our_work.html">Work</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="process.html">Process</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="solution.html">Architecture</a>
+      <div class="pt-2 border-t border-slate-200/80">
+        <a class="block w-full text-center mt-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm shadow-md transition-all hover:shadow-lg active:scale-95" href="contacts.html">Start a Project</a>
+      </div>
+    </div>
+  </header>
+  <script>
+  (function(){
+    var btn = document.getElementById('menu-button') || document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if(btn && menu){
+      btn.addEventListener('click', function(){
+        var isHidden = menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isHidden));
+        var icon = btn.querySelector('.material-symbols-outlined');
+        if(icon) {
+          icon.textContent = isHidden ? 'menu' : 'close';
+        }
+      });
+    }
+  })();
+  </script>
+
+  <main class="flex-1">
+    <!-- Header Banner -->
+    <section class="border-b border-slate-200/80 bg-white py-14 sm:py-20 relative overflow-hidden">
+      <!-- Colorful ambient background glow -->
+      <div class="pointer-events-none absolute -top-24 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/15 via-cyan-400/10 to-transparent rounded-full blur-3xl -z-10"></div>
+      <div class="pointer-events-none absolute -bottom-24 right-1/4 w-96 h-96 bg-gradient-to-tr from-purple-400/15 via-pink-400/10 to-transparent rounded-full blur-3xl -z-10"></div>
+
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 relative">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 text-primary border border-blue-200/60 text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-primary to-secondary"></span>
+          Legal &amp; Compliance
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 font-display">
+          Privacy <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-[#0070BA]">Policy</span>
+        </h1>
+        <p class="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed text-slate-600">
+          This policy explains how Apexify handles personal information when you visit our website, scope architecture, or contact us about a software engineering engagement.
+        </p>
+        <p class="mt-4 font-code-sm text-xs text-slate-400">Last updated: September 28, 2026</p>
+      </div>
+    </section>
+
+    <!-- Body Content -->
+    <section class="py-12 sm:py-16">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6">
+        <div class="rounded-2xl border border-blue-200/60 bg-blue-50/50 p-5 text-sm leading-relaxed text-slate-700 shadow-soft-xs mb-10">
+          <strong class="text-primary font-bold">Important Notice:</strong> This is a general website privacy notice. Review and adapt it to reflect your actual data practices, third-party cloud vendors, and regulatory obligations before deploying customer-facing environments.
+        </div>
+
+        <div class="legal-copy bg-white border border-slate-200/80 rounded-3xl p-8 sm:p-12 shadow-soft-sm space-y-10">
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-3">1. Information We Collect</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We may collect information you voluntarily provide, such as your name, work email address, phone number, company name, and project requirements when you submit an inquiry through our contact form. We may also collect technical analytics (browser type, device telemetry, pages viewed) strictly necessary to maintain website availability, performance, and security.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-3">2. How We Use Information</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We use personal information exclusively to review technical requirements, respond to inquiries, prepare custom engineering proposals, maintain website security, and communicate regarding scheduled sprints. We never sell, lease, or monetize client data under any circumstances.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-3">3. Sharing of Information</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We do not sell personal data. Information is only shared with trusted cloud infrastructure providers (e.g., hosting, encrypted email routing) bound by rigorous confidentiality agreements who require access to deliver their services. Disclosures may also occur when mandated by applicable law or valid legal process.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-3">4. Data Retention &amp; Zero-Trust Security</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We retain inquiry data only as long as necessary to facilitate technical review and fulfill contractual obligations. All data in transit is encrypted using modern TLS 1.3 standards. Our team enforces strict zero-trust access controls across all internal repositories and communication channels.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-3">5. Your Privacy Rights</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              You retain the right to request access to, correction of, or permanent deletion of any personal information provided to Apexify. You may also opt out of promotional communications at any point by contacting our technical team.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-3">6. Third-Party Links</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Our website may link to external client case studies or technical documentation. External services operate under their own privacy protocols, which we advise reviewing independently.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-3">7. Policy Amendments</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We may revise this privacy statement periodically to reflect changing regulatory standards. Any modifications will be documented on this page alongside a revised effective date.
+            </p>
+          </section>
+
+          <section class="pt-4 border-t border-slate-100">
+            <h2 class="text-xl font-bold text-slate-900 mb-3">8. Contact Information</h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              If you have inquiries regarding this privacy policy or wish to exercise data rights, reach out to our team at <a class="text-primary font-semibold hover:underline" href="mailto:apexifyinfos@gmail.com">apexifyinfos@gmail.com</a> or submit a message via our <a class="text-primary font-semibold hover:underline" href="contacts.html">contact page</a>.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Standardized Footer -->
+  <footer class="border-t border-slate-200/80 bg-slate-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <a href="home.html" class="flex items-center gap-2" aria-label="Apexify Home">
+          <img src="images/logo.png" alt="Apexify Software Solutions" class="h-9 w-auto object-contain">
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 font-code-sm text-center sm:text-left">© 2026 Apexify. Rooted in architectural precision.</p>
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-600 font-medium">
+        <a class="hover:text-primary transition-colors font-bold text-primary" href="privacy-policy.html">Privacy Policy</a>
+        <a class="hover:text-primary transition-colors" href="terms-and-conditions.html">Terms of Service</a>
+        <a class="hover:text-primary transition-colors" href="solution.html">Security Architecture</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

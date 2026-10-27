@@ -1,135 +1,1299 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Apexify — Case Studies &amp; Selected Work</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Apexify — Case Studies &amp; Selected Work</title>
+  <meta name="description" content="Explore Apexify's selected work and enterprise software case studies across sports management, logistics, media, and education."/>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <!-- Tailwind CSS (Local Build) -->
   <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- Header / Navigation (Destination screen: Preserving exact shared TopNavBar component) -->
-<header class="sticky top-0 z-50 bg-surface/95 backdrop-blur border-b border-outline-variant/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between whitespace-nowrap">
-<!-- Brand -->
-<a class="flex items-center gap-3 text-primary focus:outline-none" href="home.html"><img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain"></a>
-<!-- Desktop Navigation Links -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="services.html">Services</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="why-us.html">Why Us</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="our_work.html">Work</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="process.html">Process</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="solution.html">Architecture</a>
-</nav>
-<!-- CTAs -->
-<div class="flex items-center gap-3">
-<a class="hidden sm:inline-flex items-center justify-center rounded-lg h-10 px-4 bg-surface-container text-on-surface hover:bg-surface-container-high text-sm font-semibold border border-outline-variant/40 transition-colors" href="our_work.html">
-            View Our Work
-          </a>
-<a class="inline-flex items-center gap-1.5 justify-center rounded-lg h-10 px-4 bg-primary-container text-surface-container-lowest hover:bg-primary text-sm font-semibold tracking-[0.015em] shadow-sm transition-all" href="contacts.html">
-<span class="">Start a Project</span>
-<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="relative py-24 md:py-32 overflow-hidden bg-surface-container-lowest">
-  <!-- Glowing orbs -->
-  <div class="absolute top-0 right-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-  <div class="absolute bottom-0 left-1/4 w-[300px] h-[300px] bg-secondary/10 rounded-full blur-[80px] pointer-events-none"></div>
-  
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-    <h1 class="text-5xl md:text-7xl font-black text-on-surface mb-8 leading-tight tracking-tight animate-fade-in-up">
-      Proven software built for <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">ambitious companies.</span>
-    </h1>
-    <p class="text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed max-w-3xl mx-auto mb-10 animate-fade-in-up" style="animation-delay: 0.1s;">
-      Real problem-solving. Real architecture. Here is how we help clients turn complex requirements into robust digital products.
-    </p>
-  </div>
-</section>
+<body class="bg-[#F8FAFC] text-slate-800 font-body-md antialiased min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-[#071739] via-[#0B245E] to-[#0A3078] border-b border-blue-900/40 text-slate-200 py-2.5 px-4 text-xs font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/20 text-cyan-300 border border-cyan-400/30 text-[11px] font-semibold uppercase tracking-wider shadow-xs">
+          <span class="size-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          Case Studies Portfolio
+        </span>
+        <span class="text-slate-200 text-xs sm:text-sm">
+          Production systems built for enterprise sports, high-throughput logistics, and creative platforms
+        </span>
+      </div>
+      <a class="inline-flex items-center gap-1.5 text-amber-300 hover:text-white text-xs font-semibold group transition-all" href="contacts.html">
+        Commission a Case Study
+        <span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </aside>
 
-<!-- Filter Tabs Component -->
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-center gap-3 relative z-10 animate-fade-in-up" style="animation-delay: 0.2s;">
-  <button class="filter-tab active px-5 py-2.5 rounded-full text-sm font-bold bg-primary text-on-primary shadow-lg transition-all duration-300" data-category="all">All Work</button>
-  <button class="filter-tab px-5 py-2.5 rounded-full text-sm font-semibold bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-300" data-category="enterprise">Enterprise SaaS</button>
-  <button class="filter-tab px-5 py-2.5 rounded-full text-sm font-semibold bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-300" data-category="fintech">Fintech</button>
-  <button class="filter-tab px-5 py-2.5 rounded-full text-sm font-semibold bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-300" data-category="healthcare">Healthcare &amp; Logistics</button>
-  <button class="filter-tab px-5 py-2.5 rounded-full text-sm font-semibold bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-300" data-category="consumer">Consumer Platforms</button>
-</div>
+  <!-- Sticky Glass Header -->
+  <header class="sticky top-0 z-50 glass-header border-b border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand -->
+      <a class="flex items-center gap-3 text-primary focus:outline-none group" href="home.html">
+        <img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-200">
+      </a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="services.html">Services</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="why-us.html">Why Us</a>
+        <a class="text-primary font-bold py-1 relative after:w-full after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0" href="our_work.html">Work</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="process.html">Process</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="solution.html">Architecture</a>
+      </nav>
+      <!-- CTAs -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center rounded-xl h-10 px-4 bg-slate-100 hover:bg-slate-200/80 text-slate-800 hover:text-primary text-sm font-semibold border border-slate-200/80 transition-all duration-200" href="our_work.html">View Our Work</a>
+        <a class="hidden md:inline-flex items-center gap-1.5 justify-center rounded-xl h-10 px-5 bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 text-sm font-semibold tracking-wide active:scale-95" href="contacts.html">
+          <span>Start a Project</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <!-- Hamburger Button -->
+        <button id="menu-button" aria-label="Open menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-10 h-10 rounded-xl text-slate-700 hover:bg-slate-100 border border-slate-200/60 transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Drawer (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-4 space-y-1.5 shadow-xl shadow-slate-900/5 relative z-50">
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="services.html">Services</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="why-us.html">Why Us</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-semibold text-primary bg-primary/5 transition-colors" href="our_work.html">Work</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="process.html">Process</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="solution.html">Architecture</a>
+      <div class="pt-2 border-t border-slate-200/80">
+        <a class="block w-full text-center mt-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm shadow-md transition-all hover:shadow-lg active:scale-95" href="contacts.html">Start a Project</a>
+      </div>
+    </div>
+  </header>
+  <script>
+  (function(){
+    var btn = document.getElementById('menu-button') || document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if(btn && menu){
+      btn.addEventListener('click', function(){
+        var isHidden = menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isHidden));
+        var icon = btn.querySelector('.material-symbols-outlined');
+        if(icon) {
+          icon.textContent = isHidden ? 'menu' : 'close';
+        }
+      });
+    }
+  })();
+  </script>
+
+  <!-- Hero Section -->
+  <section class="relative py-16 md:py-24 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-[#F8FAFC] border-b border-slate-200/80">
+    <div class="absolute top-0 right-1/4 w-[450px] h-[450px] bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-transparent rounded-full blur-[130px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gradient-to-tr from-purple-500/20 via-pink-400/15 to-amber-300/10 rounded-full blur-[120px] pointer-events-none"></div>
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 bg-white border border-slate-200/80 rounded-full text-primary text-xs font-bold uppercase tracking-wider shadow-soft-xs">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Selected Works &amp; Case Studies
+      </div>
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tight font-display">
+        Proven software built for <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-[#0070BA]">ambitious companies.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto mb-8">
+        Real problem-solving. Real architecture. Discover how we turn complex operational requirements into robust, high-performance digital products.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs Component -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-10 mb-8 relative z-10">
+    <button class="filter-tab active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-primary to-secondary text-white shadow-soft-sm transition-all duration-300" data-category="all">All Work</button>
+    <button class="filter-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200/80 text-slate-600 hover:text-primary hover:border-primary/40 hover:bg-slate-50 transition-all duration-300 shadow-soft-xs" data-category="sports">Sports &amp; Events</button>
+    <button class="filter-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200/80 text-slate-600 hover:text-primary hover:border-primary/40 hover:bg-slate-50 transition-all duration-300 shadow-soft-xs" data-category="logistics">Logistics &amp; Transport</button>
+    <button class="filter-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200/80 text-slate-600 hover:text-primary hover:border-primary/40 hover:bg-slate-50 transition-all duration-300 shadow-soft-xs" data-category="media">Media &amp; Creative</button>
+    <button class="filter-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200/80 text-slate-600 hover:text-primary hover:border-primary/40 hover:bg-slate-50 transition-all duration-300 shadow-soft-xs" data-category="education">Education</button>
+  </div>
 
 <!-- Main Case Studies Grid -->
 <main class="w-full flex-1 py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
     
-    <!-- Case Study 1: Veritas Health Portal -->
-    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-500" data-group="healthcare">
-      <div class="overflow-hidden relative bg-surface-container-low h-[400px]">
-        <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-        <img class="w-full h-full object-cover object-top mix-blend-multiply group-hover:scale-105 transition-transform duration-700 relative z-0" alt="Veritas Health" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC-FRpeNFKZB-HAL4TdxyEll1XMMCrRqJ1E1S8rLWLNWqkiM60tZVZ9QqPiV8LUJAjagGFOl49DI8QoTw-DXo4GixUf-wI8bombPMl3WgJ-MeHQn5bZMmc8IIQL1Z8CXNq3Cw6LwnvC-NlLiDLZA9WM3uKHuMyEtilT_yIKWvJehdXHkKaxLWSKJ4o_Nk3HtSWyS2VWPla_wA7THCxbAmJrd26iaw563FULKtWPCeOB8XN5ZYqyrqp"/>
+    <!-- Case Study 5: AquaTrack Swimming Management Platform -->
+    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-cyan-400/40 hover:-translate-y-2 transition-all duration-500" data-group="sports" onclick="document.getElementById('aquatrack-modal').classList.remove('hidden');document.body.style.overflow='hidden'">
+      <!-- Image / Dashboard Preview — Real Screenshot -->
+      <div class="overflow-hidden relative bg-[#0f172a] h-48 sm:h-64 md:h-80 lg:h-[400px]">
+        <div class="absolute inset-0 bg-gradient-to-t from-cyan-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+        <img
+          src="images/aquatrack_dashboard.jpg"
+          alt="AquaTrack Admin Panel Dashboard"
+          class="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <!-- Fallback mockup shown only if image missing -->
+        <div class="w-full h-full flex-col p-4 sm:p-6 bg-[#0a1628] hidden" id="aquatrack-fallback">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 rounded-lg bg-cyan-500 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-[14px]">pool</span>
+              </div>
+              <span class="text-cyan-300 text-xs font-bold tracking-widest uppercase">AquaTrack Admin</span>
+            </div>
+            <div class="flex gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-red-400"></span>
+              <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+              <span class="w-2 h-2 rounded-full bg-green-400"></span>
+            </div>
+          </div>
+          <div class="flex gap-3 flex-1 min-h-0">
+            <div class="w-24 sm:w-28 shrink-0 bg-white/5 rounded-xl p-2 flex flex-col gap-1.5">
+              <div class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-300">
+                <span class="material-symbols-outlined text-[12px]">dashboard</span>
+                <span class="text-[9px] font-semibold hidden sm:block">Dashboard</span>
+              </div>
+              <div class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-white/50"><span class="material-symbols-outlined text-[12px]">person</span><span class="text-[9px] hidden sm:block">Athletes</span></div>
+              <div class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-white/50"><span class="material-symbols-outlined text-[12px]">event</span><span class="text-[9px] hidden sm:block">Events</span></div>
+              <div class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-white/50"><span class="material-symbols-outlined text-[12px]">emoji_events</span><span class="text-[9px] hidden sm:block">Results</span></div>
+              <div class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-white/50"><span class="material-symbols-outlined text-[12px]">leaderboard</span><span class="text-[9px] hidden sm:block">Rankings</span></div>
+              <div class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-white/50"><span class="material-symbols-outlined text-[12px]">badge</span><span class="text-[9px] hidden sm:block">Members</span></div>
+            </div>
+            <div class="flex-1 min-w-0 flex flex-col gap-2.5">
+              <div class="grid grid-cols-3 gap-2">
+                <div class="bg-white/5 rounded-lg p-2"><p class="text-[8px] text-white/40 uppercase">Athletes</p><p class="text-cyan-300 font-bold text-sm">13</p></div>
+                <div class="bg-white/5 rounded-lg p-2"><p class="text-[8px] text-white/40 uppercase">Events</p><p class="text-emerald-400 font-bold text-sm">1</p></div>
+                <div class="bg-white/5 rounded-lg p-2"><p class="text-[8px] text-white/40 uppercase">Members</p><p class="text-violet-400 font-bold text-sm">3</p></div>
+              </div>
+              <div class="bg-white/5 rounded-lg p-3 flex-1 flex flex-col justify-between">
+                <p class="text-[9px] text-white/40 uppercase tracking-wider mb-2">Revenue Overview</p>
+                <div class="flex items-end gap-1.5 h-12 sm:h-16">
+                  <div class="flex-1 bg-cyan-500/40 rounded-sm" style="height:40%"></div>
+                  <div class="flex-1 bg-cyan-500/60 rounded-sm" style="height:60%"></div>
+                  <div class="flex-1 bg-cyan-400 rounded-sm" style="height:80%"></div>
+                  <div class="flex-1 bg-cyan-500/50 rounded-sm" style="height:50%"></div>
+                  <div class="flex-1 bg-cyan-500/70 rounded-sm" style="height:70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hover overlay -->
+        <div class="absolute inset-0 flex items-end justify-end p-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <span class="inline-flex items-center gap-1 bg-cyan-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+            View Project <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </span>
+        </div>
       </div>
+      <!-- Card Body -->
       <div class="p-8 relative">
-        <span class="inline-block px-3 py-1 mb-4 rounded-lg bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider font-code-sm">Healthcare &amp; HIPAA</span>
-        <h2 class="text-3xl font-bold text-on-surface mb-3 group-hover:text-primary transition-colors tracking-tight">Veritas Health Portal</h2>
+        <span class="inline-block px-3 py-1 mb-4 rounded-lg bg-cyan-500/10 text-cyan-600 text-xs font-bold uppercase tracking-wider font-code-sm">Sports &amp; Event Management</span>
+        <h2 class="text-3xl font-bold text-on-surface mb-3 group-hover:text-cyan-600 transition-colors tracking-tight">AquaTrack</h2>
         <p class="text-on-surface-variant text-lg leading-relaxed">
-          End-to-end encrypted web portal featuring automated identity verification and real-time EHR integration via FHIR standards.
+          Complete swimming management platform connecting athletes, events, registrations, schedules, results, rankings, and memberships — built as a Flutter mobile app and a dedicated Flutter admin panel, both developed in-house.
         </p>
+        <div class="flex flex-wrap gap-2 mt-5">
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Flutter</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Dart</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Firebase</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Firestore</span>
+        </div>
       </div>
     </article>
 
-    <!-- Case Study 2: ApexFlow Supply Chain ERP -->
-    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-secondary/30 hover:-translate-y-2 transition-all duration-500" data-group="enterprise healthcare">
-      <div class="overflow-hidden relative bg-surface-container-low h-[400px]">
-        <div class="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-        <img class="w-full h-full object-cover object-top mix-blend-multiply group-hover:scale-105 transition-transform duration-700 relative z-0" alt="ApexFlow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeAPdbYnH8WMti6LkdNkvhT3VpqNmR4QupH948jj250zItwHh0ShspIw6j3Z6EWtAt5Tl4x6Fj7nSi824h7y1UJ1ocub59OODUI5ds_W3E_yo1mtUclReEctY6rRAenmY0VwIdCGUtqsKKZQVCYc6wr-yCyn6eWSZZ1EfD_ycTBpZS5AlO5dA6afAwPf4Mqk5lSFIzhIBjA2lUPVIFfpLQAxeCsQXhw6laMsC71PnKvPdcZCFKDTPa"/>
+    <!-- Case Study: Unicorn Express Packers & Movers -->
+    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-orange-400/40 hover:-translate-y-2 transition-all duration-500" data-group="logistics" onclick="document.getElementById('unicorn-modal').classList.remove('hidden');document.body.style.overflow='hidden';">
+      <!-- Card Image -->
+      <div class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-[400px] bg-gradient-to-br from-orange-50 to-amber-100">
+        <div class="absolute inset-0 bg-gradient-to-t from-orange-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+        <!-- Visual mockup of a logistics website -->
+        <div class="w-full h-full flex flex-col group-hover:scale-[1.04] transition-transform duration-700 origin-top">
+          <!-- Browser chrome bar -->
+          <div class="bg-gray-800 px-4 py-2 flex items-center gap-2 shrink-0">
+            <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-red-400"></span><span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span><span class="w-2.5 h-2.5 rounded-full bg-green-400"></span></div>
+            <div class="flex-1 bg-gray-700 rounded-full px-3 py-0.5 mx-2"><span class="text-gray-300 text-[10px]">unicornexpresspackersandmovers.com</span></div>
+          </div>
+          <!-- Hero section mockup -->
+          <div class="bg-gradient-to-br from-orange-600 to-amber-500 flex-1 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+              <div class="absolute top-4 right-4 w-32 h-32 rounded-full bg-white"></div>
+              <div class="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white"></div>
+            </div>
+            <div class="relative z-10 text-center">
+              <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 mb-3">
+                <span class="material-symbols-outlined text-white text-[14px]">local_shipping</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-widest">Packers &amp; Movers</span>
+              </div>
+              <h3 class="text-white font-black text-xl sm:text-2xl leading-tight mb-2">Unicorn Express</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Trusted Relocation Services</p>
+              <div class="flex gap-2 justify-center mt-4">
+                <span class="bg-white text-orange-600 font-bold text-[10px] px-3 py-1.5 rounded-full">Get Quote</span>
+                <span class="border border-white/60 text-white font-bold text-[10px] px-3 py-1.5 rounded-full">Our Services</span>
+              </div>
+            </div>
+          </div>
+          <!-- Service strip -->
+          <div class="bg-white border-t border-orange-100 px-4 py-2 flex gap-3 justify-center shrink-0">
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-orange-500 text-[12px]">inventory_2</span>Packing</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-orange-500 text-[12px]">local_shipping</span>Moving</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-orange-500 text-[12px]">home</span>Relocation</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-orange-500 text-[12px]">warehouse</span>Storage</span>
+          </div>
+        </div>
+        <!-- Hover pill -->
+        <div class="absolute inset-0 flex items-end justify-end p-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <span class="inline-flex items-center gap-1 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+            View Project <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </span>
+        </div>
       </div>
+      <!-- Card body -->
       <div class="p-8 relative">
-        <span class="inline-block px-3 py-1 mb-4 rounded-lg bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider font-code-sm">Enterprise Logistics</span>
-        <h2 class="text-3xl font-bold text-on-surface mb-3 group-hover:text-secondary transition-colors tracking-tight">ApexFlow Supply Chain ERP</h2>
-        <p class="text-on-surface-variant text-lg leading-relaxed">
-          Real-time inventory tracking dashboard with predictive demand forecasting and event-driven microservices architecture.
+        <div class="flex items-center gap-2 mb-4">
+          <span class="inline-block px-3 py-1 rounded-lg bg-orange-500/10 text-orange-600 text-xs font-bold uppercase tracking-wider font-code-sm">Logistics &amp; Transportation</span>
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>Live</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-on-surface mb-3 group-hover:text-orange-600 transition-colors tracking-tight">Unicorn Express Packers &amp; Movers</h2>
+        <p class="text-on-surface-variant text-base leading-relaxed">
+          Professional logistics and relocation website built with a focus on responsive design, service presentation, customer enquiries, and local SEO.
         </p>
+        <div class="flex flex-wrap gap-2 mt-5">
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">WordPress</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">SEO</span>
+        </div>
       </div>
     </article>
 
-    <!-- Case Study 3: Kinetix Financial Analytics -->
-    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-tertiary/30 hover:-translate-y-2 transition-all duration-500" data-group="fintech enterprise">
-      <div class="overflow-hidden relative bg-surface-container-low h-[400px]">
-        <div class="absolute inset-0 bg-gradient-to-t from-tertiary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-        <img class="w-full h-full object-cover object-top mix-blend-multiply group-hover:scale-105 transition-transform duration-700 relative z-0" alt="Kinetix" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQKBQH423B_bfWzDbzm9ZIquRqqd0a5IBjhIQCuU_cGsijqrM8t4J3lZDjQDhfDW7BVoNFdqq0zORz0nTd0dVBvACc8IQBAYj237o1F0TvtgvU-zjupsqNM5EAS_W5XiSYqoG8X0nTpsAIAtyactCNatNGJjzbLqxihbakVuQ8YlRhCd-Mhgn5Byp1-iemPbcxTen9RIfR_oEJd3ABkS15YsSqCjt2v-TazDXRNS_wk1TBiBtwoyz2"/>
+    <!-- Nemesis Pictures -->
+    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-red-500/40 hover:-translate-y-2 transition-all duration-500" data-group="media" onclick="document.getElementById('nemesis-modal').classList.remove('hidden');document.body.style.overflow='hidden';">
+      <!-- Card Image — cinematic dark visual -->
+      <div class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-[400px] bg-[#0a0a0a]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+        <div class="w-full h-full flex flex-col group-hover:scale-[1.04] transition-transform duration-700 origin-center relative">
+          <!-- Letterbox bars -->
+          <div class="absolute top-0 left-0 right-0 h-5 bg-black z-10"></div>
+          <div class="absolute bottom-0 left-0 right-0 h-5 bg-black z-10"></div>
+          <!-- Cinematic BG -->
+          <div class="absolute inset-0 bg-gradient-to-br from-red-950 via-gray-900 to-black"></div>
+          <!-- Spotlight effect -->
+          <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_40%,rgba(220,38,38,0.15),transparent_65%)]"></div>
+          <!-- Content -->
+          <div class="absolute inset-0 flex flex-col items-center justify-center z-10 px-6 text-center">
+            <div class="w-12 h-12 rounded-full border-2 border-white/20 flex items-center justify-center mb-4">
+              <span class="material-symbols-outlined text-white/60 text-[24px]">movie</span>
+            </div>
+            <p class="text-red-400 text-[9px] font-bold uppercase tracking-[0.3em] mb-2">Production House</p>
+            <h3 class="text-white font-black text-2xl sm:text-3xl tracking-tight leading-tight">Nemesis</h3>
+            <h3 class="text-white/70 font-black text-2xl sm:text-3xl tracking-tight leading-tight">Pictures</h3>
+            <div class="mt-4 flex gap-3 text-[9px] text-white/30 uppercase tracking-widest font-semibold">
+              <span>Films</span><span class="text-white/10">·</span>
+              <span>Directors</span><span class="text-white/10">·</span>
+              <span>Production</span>
+            </div>
+          </div>
+        </div>
+        <!-- Hover pill -->
+        <div class="absolute inset-0 flex items-end justify-end p-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <span class="inline-flex items-center gap-1 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+            View Demo <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </span>
+        </div>
       </div>
+      <!-- Card body -->
       <div class="p-8 relative">
-        <span class="inline-block px-3 py-1 mb-4 rounded-lg bg-tertiary/10 text-tertiary text-xs font-bold uppercase tracking-wider font-code-sm">Fintech &amp; Wealth</span>
-        <h2 class="text-3xl font-bold text-on-surface mb-3 group-hover:text-tertiary transition-colors tracking-tight">Kinetix Financial Analytics</h2>
-        <p class="text-on-surface-variant text-lg leading-relaxed">
-          WebGL-accelerated interactive charting suite with a distributed multithreaded calculation engine.
+        <div class="flex items-center gap-2 mb-4">
+          <span class="inline-block px-3 py-1 rounded-lg bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-wider font-code-sm">Media &amp; Creative</span>
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-yellow-100 text-yellow-700 text-[10px] font-bold">
+            <span class="material-symbols-outlined text-[10px]">construction</span>Demo
+          </span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-on-surface mb-3 group-hover:text-red-500 transition-colors tracking-tight">Nemesis Pictures</h2>
+        <p class="text-on-surface-variant text-base leading-relaxed">
+          A cinematic production-house website concept designed to showcase films, directors, production work, awards, and creative services.
         </p>
+        <div class="flex flex-wrap gap-2 mt-5">
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">React</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Next.js</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span>
+        </div>
       </div>
     </article>
 
-    <!-- Case Study 4: OmniRetail Headless Commerce -->
-    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-500" data-group="consumer">
-      <div class="overflow-hidden relative bg-surface-container-low h-[400px]">
-        <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-        <img class="w-full h-full object-cover object-top mix-blend-multiply group-hover:scale-105 transition-transform duration-700 relative z-0" alt="OmniRetail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNiGaVuBskuEvyrk3UU86O5Ogn-KNGaVZvIhXB7f8k4gfyDLr1aFaQ0tbGlDBKKvRQ3ZkbRGwZFrb5530knweOm25MKmt2yJAWdhtlfz7CufoNGsXIunulxlx6F1BCMoNrXOI3ueWUGAOyK5nMCvbUAZSt3vkrazc98ZuKAqup6iQjISe9MqVwPZt_VJVMUup0kZjc67gO_h-BCjuwmkW64dZ6-Yi1JI3HTV2zGbSNnx0YxSyfeG66"/>
+    <!-- Sara Movers & Packers -->
+    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-blue-400/40 hover:-translate-y-2 transition-all duration-500" data-group="logistics" onclick="document.getElementById('sara-modal').classList.remove('hidden');document.body.style.overflow='hidden';">
+      <!-- Card Image -->
+      <div class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-[400px] bg-gradient-to-br from-blue-50 to-sky-100">
+        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+        <div class="w-full h-full flex flex-col group-hover:scale-[1.04] transition-transform duration-700 origin-top">
+          <!-- Browser bar -->
+          <div class="bg-gray-800 px-4 py-2 flex items-center gap-2 shrink-0">
+            <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-red-400"></span><span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span><span class="w-2.5 h-2.5 rounded-full bg-green-400"></span></div>
+            <div class="flex-1 bg-gray-700 rounded-full px-3 py-0.5 mx-2"><span class="text-gray-300 text-[10px]">moverspackers.ae</span></div>
+          </div>
+          <!-- Hero section mockup -->
+          <div class="bg-gradient-to-br from-blue-700 to-sky-500 flex-1 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+              <div class="absolute top-4 right-4 w-32 h-32 rounded-full bg-white"></div>
+              <div class="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white"></div>
+            </div>
+            <div class="relative z-10 text-center">
+              <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 mb-3">
+                <span class="material-symbols-outlined text-white text-[14px]">local_shipping</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-widest">Movers &amp; Packers</span>
+              </div>
+              <h3 class="text-white font-black text-xl sm:text-2xl leading-tight mb-2">Sara Movers</h3>
+              <p class="text-white/80 text-xs sm:text-sm">&amp; Packers — UAE</p>
+              <div class="flex gap-2 justify-center mt-4">
+                <span class="bg-white text-blue-600 font-bold text-[10px] px-3 py-1.5 rounded-full">Get Quote</span>
+                <span class="border border-white/60 text-white font-bold text-[10px] px-3 py-1.5 rounded-full">Our Services</span>
+              </div>
+            </div>
+          </div>
+          <!-- Service strip -->
+          <div class="bg-white border-t border-blue-100 px-4 py-2 flex gap-3 justify-center shrink-0">
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-blue-500 text-[12px]">inventory_2</span>Packing</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-blue-500 text-[12px]">local_shipping</span>Moving</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-blue-500 text-[12px]">home</span>Relocation</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-blue-500 text-[12px]">warehouse</span>Transport</span>
+          </div>
+        </div>
+        <!-- Hover pill -->
+        <div class="absolute inset-0 flex items-end justify-end p-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <span class="inline-flex items-center gap-1 bg-blue-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+            View Project <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </span>
+        </div>
+      </div>
+      <!-- Card body -->
+      <div class="p-8 relative">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="inline-block px-3 py-1 rounded-lg bg-blue-500/10 text-blue-600 text-xs font-bold uppercase tracking-wider font-code-sm">Logistics &amp; Transportation</span>
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>Live</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-on-surface mb-3 group-hover:text-blue-600 transition-colors tracking-tight">Sara Movers &amp; Packers</h2>
+        <p class="text-on-surface-variant text-base leading-relaxed">
+          A responsive logistics website built with HTML and CSS to showcase packing, moving, relocation, and transportation services.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-5">
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span> 
+        </div>
+      </div>
+    </article>
+
+    <!-- A1 Express Movers -->
+    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-emerald-400/40 hover:-translate-y-2 transition-all duration-500" data-group="logistics" onclick="document.getElementById('a1-modal').classList.remove('hidden');document.body.style.overflow='hidden';">
+      <div class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-[400px] bg-gradient-to-br from-emerald-50 to-teal-100">
+        <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+        <div class="w-full h-full flex flex-col group-hover:scale-[1.04] transition-transform duration-700 origin-top">
+          <div class="bg-gray-800 px-4 py-2 flex items-center gap-2 shrink-0">
+            <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-red-400"></span><span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span><span class="w-2.5 h-2.5 rounded-full bg-green-400"></span></div>
+            <div class="flex-1 bg-gray-700 rounded-full px-3 py-0.5 mx-2"><span class="text-gray-300 text-[10px]">a1expressmovers.com</span></div>
+          </div>
+          <div class="bg-gradient-to-br from-emerald-700 to-teal-500 flex-1 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10"><div class="absolute top-4 right-4 w-32 h-32 rounded-full bg-white"></div><div class="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white"></div></div>
+            <div class="relative z-10 text-center">
+              <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 mb-3">
+                <span class="material-symbols-outlined text-white text-[14px]">local_shipping</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-widest">Express Movers</span>
+              </div>
+              <h3 class="text-white font-black text-xl sm:text-2xl leading-tight mb-2">A1 Express Movers</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Moving &amp; Relocation Services</p>
+              <div class="flex gap-2 justify-center mt-4">
+                <span class="bg-white text-emerald-700 font-bold text-[10px] px-3 py-1.5 rounded-full">Get Quote</span>
+                <span class="border border-white/60 text-white font-bold text-[10px] px-3 py-1.5 rounded-full">Our Services</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border-t border-emerald-100 px-4 py-2 flex gap-3 justify-center shrink-0">
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-emerald-500 text-[12px]">inventory_2</span>Packing</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-emerald-500 text-[12px]">local_shipping</span>Moving</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-emerald-500 text-[12px]">home</span>Relocation</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-emerald-500 text-[12px]">warehouse</span>Storage</span>
+          </div>
+        </div>
+        <div class="absolute inset-0 flex items-end justify-end p-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <span class="inline-flex items-center gap-1 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+            View Project <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </span>
+        </div>
       </div>
       <div class="p-8 relative">
-        <span class="inline-block px-3 py-1 mb-4 rounded-lg bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider font-code-sm">Global E-Commerce</span>
-        <h2 class="text-3xl font-bold text-on-surface mb-3 group-hover:text-primary transition-colors tracking-tight">OmniRetail Headless Commerce</h2>
-        <p class="text-on-surface-variant text-lg leading-relaxed">
-          Custom headless Next.js storefront powered by Shopify Storefront API and global edge-distributed caching.
+        <div class="flex items-center gap-2 mb-4">
+          <span class="inline-block px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 text-xs font-bold uppercase tracking-wider font-code-sm">Logistics &amp; Transportation</span>
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>Live</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-on-surface mb-3 group-hover:text-emerald-600 transition-colors tracking-tight">A1 Express Movers</h2>
+        <p class="text-on-surface-variant text-base leading-relaxed">
+          A responsive moving and relocation business website built with HTML and CSS, focused on service presentation, clear navigation, and mobile-friendly design.
         </p>
+        <div class="flex flex-wrap gap-2 mt-5">
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Seven Square Academy -->
+    <article class="case-study-card group cursor-pointer bg-surface-container-lowest border border-outline-variant/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:border-violet-400/40 hover:-translate-y-2 transition-all duration-500" data-group="education" onclick="document.getElementById('sevensquare-modal').classList.remove('hidden');document.body.style.overflow='hidden';">
+      <div class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-[400px] bg-gradient-to-br from-violet-50 to-indigo-100">
+        <div class="absolute inset-0 bg-gradient-to-t from-violet-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
+        <div class="w-full h-full flex flex-col group-hover:scale-[1.04] transition-transform duration-700 origin-top">
+          <!-- Browser bar -->
+          <div class="bg-gray-800 px-4 py-2 flex items-center gap-2 shrink-0">
+            <div class="flex gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-red-400"></span><span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span><span class="w-2.5 h-2.5 rounded-full bg-green-400"></span></div>
+            <div class="flex-1 bg-gray-700 rounded-full px-3 py-0.5 mx-2"><span class="text-gray-300 text-[10px]">sevensquareacademy.org</span></div>
+          </div>
+          <!-- Hero section -->
+          <div class="bg-gradient-to-br from-violet-700 to-indigo-600 flex-1 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10"><div class="absolute top-4 right-4 w-32 h-32 rounded-full bg-white"></div><div class="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white"></div></div>
+            <div class="relative z-10 text-center">
+              <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 mb-3">
+                <span class="material-symbols-outlined text-white text-[14px]">school</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-widest">Academy</span>
+              </div>
+              <h3 class="text-white font-black text-xl sm:text-2xl leading-tight mb-1">Seven Square</h3>
+              <h3 class="text-white/80 font-bold text-lg sm:text-xl leading-tight mb-2">Academy</h3>
+              <p class="text-white/70 text-xs sm:text-sm">Admissions Open</p>
+              <div class="flex gap-2 justify-center mt-4">
+                <span class="bg-white text-violet-700 font-bold text-[10px] px-3 py-1.5 rounded-full">Apply Now</span>
+                <span class="border border-white/60 text-white font-bold text-[10px] px-3 py-1.5 rounded-full">About Us</span>
+              </div>
+            </div>
+          </div>
+          <!-- Info strip -->
+          <div class="bg-white border-t border-violet-100 px-4 py-2 flex gap-3 justify-center shrink-0">
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-violet-500 text-[12px]">menu_book</span>Academics</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-violet-500 text-[12px]">how_to_reg</span>Admissions</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-violet-500 text-[12px]">sports_soccer</span>Activities</span>
+            <span class="flex items-center gap-1 text-[9px] text-gray-500 font-semibold"><span class="material-symbols-outlined text-violet-500 text-[12px]">apartment</span>Facilities</span>
+          </div>
+        </div>
+        <div class="absolute inset-0 flex items-end justify-end p-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <span class="inline-flex items-center gap-1 bg-violet-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+            View Project <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </span>
+        </div>
+      </div>
+      <div class="p-8 relative">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="inline-block px-3 py-1 rounded-lg bg-violet-500/10 text-violet-600 text-xs font-bold uppercase tracking-wider font-code-sm">Education &amp; School</span>
+          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-100 text-green-700 text-[10px] font-bold"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>Live</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-on-surface mb-3 group-hover:text-violet-600 transition-colors tracking-tight">Seven Square Academy</h2>
+        <p class="text-on-surface-variant text-base leading-relaxed">
+          An institutional school website designed to present academics, admissions, activities, facilities, achievements, and essential information through a responsive and user-focused experience.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-5">
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span>
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">PHP</span>
+        </div>
       </div>
     </article>
 
   </div>
 </main>
-<!-- End Case Studies Grid -->
+
+<!-- ─── Seven Square Academy Project Details Modal ────────────────────── -->
+<div id="sevensquare-modal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-black/70 backdrop-blur-sm" style="padding:24px 16px;" onclick="if(event.target===this){this.classList.add('hidden');document.body.style.overflow='';}">
+  <div class="modal-inner relative bg-surface rounded-3xl shadow-2xl" style="width:100%;max-width:896px;margin:24px auto;">
+    <!-- Close -->
+    <button onclick="document.getElementById('sevensquare-modal').classList.add('hidden');document.body.style.overflow='';" class="modal-close-btn dark" aria-label="Close"><span class="material-symbols-outlined" style="font-size:20px;">close</span></button>
+    <!-- Hero banner -->
+    <div class="w-full bg-gradient-to-br from-violet-700 to-indigo-600 relative overflow-hidden" style="min-height:180px;">
+      <div class="absolute inset-0 opacity-10 pointer-events-none"><div class="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-white"></div><div class="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-white"></div></div>
+      <div class="relative z-10 px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-lg shrink-0">
+          <span class="material-symbols-outlined text-violet-600 text-[32px]">school</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-violet-100 text-[10px] font-bold uppercase tracking-widest">Education &amp; School Website</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-400/20 text-green-100 text-[10px] font-bold border border-green-400/30"><span class="w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse"></span>Live / Production</span>
+          </div>
+          <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">Seven Square Academy</h2>
+          <a href="https://sevensquareacademy.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-violet-100 hover:text-white text-xs mt-1 transition-colors">
+            <span class="material-symbols-outlined text-[14px]">language</span>
+            sevensquareacademy.org
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal content -->
+    <div class="p-6 sm:p-10">
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 rounded-full bg-violet-500/10 text-violet-600 text-xs font-bold uppercase tracking-wider">Institutional Website</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">PHP</span>
+      </div>
+      <!-- Overview -->
+      <h3 class="text-2xl sm:text-3xl font-black text-on-surface mb-3 tracking-tight">Seven Square Academy</h3>
+      <p class="text-on-surface-variant text-base leading-relaxed mb-8">
+        An educational institution website designed to present the school's academics, admissions, activities, facilities, achievements, and branch information to students and parents. Built with a responsive, user-focused interface for easy navigation across all devices.
+      </p>
+      <!-- My Role -->
+      <div class="bg-violet-500/5 border border-violet-500/20 rounded-2xl p-6 mb-8">
+        <h4 class="text-sm font-bold text-violet-600 uppercase tracking-widest mb-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          My Role — Web Developer
+        </h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">
+          I worked on the complete website development — responsive UI implementation, page layout and structure, navigation, school information sections, admissions-related pages, activities and academics sections, contact and inquiry sections, and overall mobile and desktop responsiveness. I handled UI improvements and all content presentation across the site.
+        </p>
+      </div>
+      <!-- Features -->
+      <h4 class="text-xs font-bold text-on-surface uppercase tracking-widest mb-4">Key Features</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">school</span>
+          <div><p class="font-semibold text-on-surface text-sm">School Information</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Comprehensive introduction to the academy, its vision, and key highlights for students and parents.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">how_to_reg</span>
+          <div><p class="font-semibold text-on-surface text-sm">Online Admission / Registration</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Admission process pages and online registration flow for new student enquiries and applications.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">menu_book</span>
+          <div><p class="font-semibold text-on-surface text-sm">Academic Information</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Dedicated sections covering curriculum, academic programs, and educational offerings.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">sports_soccer</span>
+          <div><p class="font-semibold text-on-surface text-sm">Activities &amp; Events</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Sports, extracurricular activities, and school events presented with engaging visual layouts.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">apartment</span>
+          <div><p class="font-semibold text-on-surface text-sm">Facilities &amp; Infrastructure</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Showcase of school facilities, classrooms, labs, sports grounds, and infrastructure.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">format_quote</span>
+          <div><p class="font-semibold text-on-surface text-sm">Parent Testimonials</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Trust-building testimonial section from parents sharing their experience with the academy.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">location_on</span>
+          <div><p class="font-semibold text-on-surface text-sm">Multiple Branch Information</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Dedicated sections for each school branch with location and contact details.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">devices</span>
+          <div><p class="font-semibold text-on-surface text-sm">Responsive Design</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Fully mobile-friendly and desktop-optimized layout for seamless experience across all devices.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-violet-500 text-[20px] mt-0.5 shrink-0">contact_mail</span>
+          <div><p class="font-semibold text-on-surface text-sm">Contact / Enquiry Form</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Enquiry and contact sections enabling parents and students to reach the school easily.</p></div>
+        </div>
+      </div>
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-outline-variant/30">
+        <a href="https://sevensquareacademy.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-violet-600 text-white font-bold text-sm hover:bg-violet-700 transition-colors shadow-sm">
+          Visit Live Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+        </a>
+        <a href="contacts.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-surface-container text-on-surface font-bold text-sm hover:bg-gray-100 hover:text-indigo-600 border border-outline-variant/40 transition-colors">
+          Discuss a Similar Project <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <button onclick="document.getElementById('sevensquare-modal').classList.add('hidden');document.body.style.overflow='';" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/50 text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="sara-modal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-black/70 backdrop-blur-sm" style="padding:24px 16px;" onclick="if(event.target===this){this.classList.add('hidden');document.body.style.overflow='';}">
+  <div class="modal-inner relative bg-surface rounded-3xl shadow-2xl" style="width:100%;max-width:896px;margin:24px auto;">
+
+    <!-- Close -->
+    <button onclick="document.getElementById('sara-modal').classList.add('hidden');document.body.style.overflow='';" class="modal-close-btn dark" aria-label="Close"><span class="material-symbols-outlined" style="font-size:20px;">close</span></button>
+
+    <!-- Hero banner -->
+    <div class="w-full bg-gradient-to-br from-blue-700 to-sky-500 relative overflow-hidden" style="min-height:180px;">
+      <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <div class="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-white"></div>
+        <div class="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-white"></div>
+      </div>
+      <div class="relative z-10 px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-lg shrink-0">
+          <span class="material-symbols-outlined text-blue-600 text-[32px]">local_shipping</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-blue-100 text-[10px] font-bold uppercase tracking-widest">Logistics &amp; Transportation · UAE</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-400/20 text-green-100 text-[10px] font-bold border border-green-400/30"><span class="w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse"></span>Live / Production</span>
+          </div>
+          <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">Sara Movers &amp; Packers</h2>
+          <a href="https://moverspackers.ae/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-blue-100 hover:text-white text-xs mt-1 transition-colors">
+            <span class="material-symbols-outlined text-[14px]">language</span>
+            moverspackers.ae
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div class="p-6 sm:p-10">
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-600 text-xs font-bold uppercase tracking-wider">Business Website</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span>
+      </div>
+
+      <!-- Overview -->
+      <h3 class="text-2xl sm:text-3xl font-black text-on-surface mb-3 tracking-tight">Sara Movers &amp; Packers</h3>
+      <p class="text-on-surface-variant text-base leading-relaxed mb-8">
+        A responsive business website developed to showcase packing, moving, relocation, and transportation services and help customers find relevant services and contact the business. Built with clean HTML and CSS with a focus on mobile-friendly design and clear service presentation.
+      </p>
+
+      <!-- My Role -->
+      <div class="bg-blue-500/5 border border-blue-500/20 rounded-2xl p-6 mb-8">
+        <h4 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          My Role — Web Developer
+        </h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">
+          I handled the complete website development — building the responsive layout, implementing all service sections, structuring the page navigation, and optimizing for both mobile and desktop. I was responsible for business information presentation, contact and enquiry sections, and delivering a clean, user-focused interface.
+        </p>
+      </div>
+
+      <!-- Features grid -->
+      <h4 class="text-xs font-bold text-on-surface uppercase tracking-widest mb-4">Key Features</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-blue-500 text-[20px] mt-0.5 shrink-0">devices</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Responsive Design</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Fully mobile-friendly layout optimized for all screen sizes from phones to desktops.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-blue-500 text-[20px] mt-0.5 shrink-0">inventory_2</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Service Sections</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Dedicated sections for packing, moving, relocation, and transportation with clear descriptions.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-blue-500 text-[20px] mt-0.5 shrink-0">contact_phone</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Contact / Enquiry Section</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Easy-to-use contact section enabling customers to reach the business and request quotes.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-blue-500 text-[20px] mt-0.5 shrink-0">info</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Business Information</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Clear business details, service areas, and contact information presented for customer trust.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-blue-500 text-[20px] mt-0.5 shrink-0">view_list</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Service Information Pages</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Individual pages covering each service category with relevant details and CTAs.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-blue-500 text-[20px] mt-0.5 shrink-0">design_services</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Clean User-Focused Interface</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Simple, distraction-free design focused on guiding visitors to the right service and contact action.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-outline-variant/30">
+        <a href="https://moverspackers.ae/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition-colors shadow-sm">
+          Visit Live Site
+          <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+        </a>
+        <a href="contacts.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-surface-container text-on-surface font-bold text-sm hover:bg-gray-100 hover:text-indigo-600 border border-outline-variant/40 transition-colors">
+          Discuss a Similar Project
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <button onclick="document.getElementById('sara-modal').classList.add('hidden');document.body.style.overflow='';" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/50 text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── A1 Express Movers Project Details Modal ───────────────────────── -->
+<div id="a1-modal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-black/70 backdrop-blur-sm" style="padding:24px 16px;" onclick="if(event.target===this){this.classList.add('hidden');document.body.style.overflow='';}">
+  <div class="modal-inner relative bg-surface rounded-3xl shadow-2xl" style="width:100%;max-width:896px;margin:24px auto;">
+    <!-- Close -->
+    <button onclick="document.getElementById('a1-modal').classList.add('hidden');document.body.style.overflow='';" class="modal-close-btn dark" aria-label="Close"><span class="material-symbols-outlined" style="font-size:20px;">close</span></button>
+    <!-- Hero banner -->
+    <div class="w-full bg-gradient-to-br from-emerald-700 to-teal-500 relative overflow-hidden" style="min-height:180px;">
+      <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <div class="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-white"></div>
+        <div class="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-white"></div>
+      </div>
+      <div class="relative z-10 px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-lg shrink-0">
+          <span class="material-symbols-outlined text-emerald-600 text-[32px]">local_shipping</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-emerald-100 text-[10px] font-bold uppercase tracking-widest">Logistics &amp; Transportation</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-400/20 text-green-100 text-[10px] font-bold border border-green-400/30"><span class="w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse"></span>Live / Production</span>
+          </div>
+          <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">A1 Express Movers</h2>
+          <a href="https://www.a1expressmovers.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-emerald-100 hover:text-white text-xs mt-1 transition-colors">
+            <span class="material-symbols-outlined text-[14px]">language</span>
+            a1expressmovers.com
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal content -->
+    <div class="p-6 sm:p-10">
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-xs font-bold uppercase tracking-wider">Business Website</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+      </div>
+      <!-- Overview -->
+      <h3 class="text-2xl sm:text-3xl font-black text-on-surface mb-3 tracking-tight">A1 Express Movers</h3>
+      <p class="text-on-surface-variant text-base leading-relaxed mb-8">
+        A responsive business website developed for a moving and relocation service, presenting its services and business information through a clean, customer-focused web interface built with HTML and CSS.
+      </p>
+      <!-- My Role -->
+      <div class="bg-emerald-500/5 border border-emerald-500/20 rounded-2xl p-6 mb-8">
+        <h4 class="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          My Role — Web Developer
+        </h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">
+          I handled the complete website development — responsive HTML/CSS implementation, page layout and structure, service presentation, navigation, mobile and desktop responsiveness, contact and enquiry sections, and delivering a clean, user-friendly interface.
+        </p>
+      </div>
+      <!-- Features -->
+      <h4 class="text-xs font-bold text-on-surface uppercase tracking-widest mb-4">Key Features</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-emerald-500 text-[20px] mt-0.5 shrink-0">devices</span>
+          <div><p class="font-semibold text-on-surface text-sm">Responsive Website</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Fully optimized layout for mobile, tablet, and desktop screens.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-emerald-500 text-[20px] mt-0.5 shrink-0">local_shipping</span>
+          <div><p class="font-semibold text-on-surface text-sm">Moving &amp; Relocation Services</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Dedicated sections presenting all moving and relocation service offerings.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-emerald-500 text-[20px] mt-0.5 shrink-0">contact_phone</span>
+          <div><p class="font-semibold text-on-surface text-sm">Contact / Enquiry Section</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Easy customer contact section for quotes and service enquiries.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-emerald-500 text-[20px] mt-0.5 shrink-0">info</span>
+          <div><p class="font-semibold text-on-surface text-sm">Business Information</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Clear business details and service area information for customer trust.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-emerald-500 text-[20px] mt-0.5 shrink-0">view_list</span>
+          <div><p class="font-semibold text-on-surface text-sm">Service Information Pages</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Individual service pages with relevant details and clear call-to-action.</p></div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-emerald-500 text-[20px] mt-0.5 shrink-0">design_services</span>
+          <div><p class="font-semibold text-on-surface text-sm">Clean Structured UI</p><p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Simple, structured interface guiding visitors toward services and contact.</p></div>
+        </div>
+      </div>
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-outline-variant/30">
+        <a href="https://www.a1expressmovers.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 text-white font-bold text-sm hover:bg-emerald-700 transition-colors shadow-sm">
+          Visit Live Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+        </a>
+        <a href="contacts.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-surface-container text-on-surface font-bold text-sm hover:bg-gray-100 hover:text-indigo-600 border border-outline-variant/40 transition-colors">
+          Discuss a Similar Project <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <button onclick="document.getElementById('a1-modal').classList.add('hidden');document.body.style.overflow='';" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/50 text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── Unicorn Express Project Details Modal ─────────────────────────── -->
+<div id="unicorn-modal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-black/70 backdrop-blur-sm" style="padding:24px 16px;" onclick="if(event.target===this){this.classList.add('hidden');document.body.style.overflow='';}">
+  <div class="modal-inner relative bg-surface rounded-3xl shadow-2xl" style="width:100%;max-width:896px;margin:24px auto;">
+
+    <!-- Close -->
+    <button onclick="document.getElementById('unicorn-modal').classList.add('hidden');document.body.style.overflow='';" class="modal-close-btn dark" aria-label="Close"><span class="material-symbols-outlined" style="font-size:20px;">close</span></button>
+
+    <!-- Hero banner -->
+    <div class="w-full bg-gradient-to-br from-orange-600 to-amber-500 relative overflow-hidden" style="min-height:180px;">
+      <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <div class="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-white"></div>
+        <div class="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-white"></div>
+      </div>
+      <div class="relative z-10 px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-lg shrink-0">
+          <span class="material-symbols-outlined text-orange-500 text-[32px]">local_shipping</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-orange-100 text-[10px] font-bold uppercase tracking-widest">Logistics &amp; Transportation</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-400/20 text-green-100 text-[10px] font-bold border border-green-400/30"><span class="w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse"></span>Live / Production</span>
+          </div>
+          <h2 class="text-white text-2xl sm:text-3xl font-black tracking-tight">Unicorn Express Packers &amp; Movers</h2>
+          <a href="https://unicornexpresspackersandmovers.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-orange-100 hover:text-white text-xs mt-1 transition-colors">
+            <span class="material-symbols-outlined text-[14px]">language</span>
+            unicornexpresspackersandmovers.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div class="p-6 sm:p-10">
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 text-xs font-bold uppercase tracking-wider">Business Website</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">HTML</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">WordPress</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">SEO</span>
+      </div>
+
+      <!-- Overview -->
+      <h3 class="text-2xl sm:text-3xl font-black text-on-surface mb-3 tracking-tight">Unicorn Express Packers &amp; Movers</h3>
+      <p class="text-on-surface-variant text-base leading-relaxed mb-8">
+        A professional logistics and relocation business website built to present packing, moving, transportation, and relocation services to customers. The website is designed with a strong focus on responsive UI, service presentation, customer enquiries, and local SEO — helping the business reach and convert customers across multiple cities.
+      </p>
+
+      <!-- My Role -->
+      <div class="bg-orange-500/5 border border-orange-500/20 rounded-2xl p-6 mb-8">
+        <h4 class="text-sm font-bold text-orange-600 uppercase tracking-widest mb-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          My Role — Web Developer / SEO
+        </h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">
+          I worked on the complete development and SEO of this project — from building the responsive website and service pages to implementing location-based pages, customer enquiry flows, and local SEO. I was responsible for the full website structure, mobile and desktop optimization, SEO-friendly content structure, performance improvements, and social media integration.
+        </p>
+      </div>
+
+      <!-- Features grid -->
+      <h4 class="text-xs font-bold text-on-surface uppercase tracking-widest mb-4">Key Features</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-orange-500 text-[20px] mt-0.5 shrink-0">inventory_2</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Service Sections</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Dedicated pages for packing, moving, transportation, and relocation services with clear descriptions.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-orange-500 text-[20px] mt-0.5 shrink-0">location_on</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Location / City Pages</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">City-specific landing pages built for local SEO to capture search traffic across service areas.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-orange-500 text-[20px] mt-0.5 shrink-0">contact_phone</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Customer Enquiry Flow</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Contact forms and enquiry sections designed to capture leads and drive customer conversions.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-orange-500 text-[20px] mt-0.5 shrink-0">devices</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Responsive Design</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Fully mobile-friendly interface optimized for all screen sizes — phones, tablets, and desktops.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-orange-500 text-[20px] mt-0.5 shrink-0">travel_explore</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Local SEO Implementation</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">SEO-optimized page structure, meta tags, schema markup, and content strategy for local search visibility.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-orange-500 text-[20px] mt-0.5 shrink-0">share</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Social Media Integration</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Business social profiles linked and integrated for trust signals and customer engagement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-outline-variant/30">
+        <a href="https://unicornexpresspackersandmovers.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-orange-500 text-white font-bold text-sm hover:bg-orange-600 transition-colors shadow-sm">
+          Visit Live Site
+          <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+        </a>
+        <a href="contacts.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-surface-container text-on-surface font-bold text-sm hover:bg-gray-100 hover:text-indigo-600 border border-outline-variant/40 transition-colors">
+          Discuss a Similar Project
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <button onclick="document.getElementById('unicorn-modal').classList.add('hidden');document.body.style.overflow='';" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/50 text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── Nemesis Pictures Card (injected into grid via JS) ─────────────── -->
+<!-- Note: Card is rendered inline in grid above via the grid injection below -->
+
+<!-- ─── Nemesis Pictures Project Details Modal ──────────────────────── -->
+<div id="nemesis-modal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-black/70 backdrop-blur-sm" style="padding:24px 16px;" onclick="if(event.target===this){this.classList.add('hidden');document.body.style.overflow='';}">
+  <div class="modal-inner relative bg-surface rounded-3xl shadow-2xl" style="width:100%;max-width:896px;margin:24px auto;">
+
+    <!-- Close -->
+    <button onclick="document.getElementById('nemesis-modal').classList.add('hidden');document.body.style.overflow='';" class="modal-close-btn" aria-label="Close"><span class="material-symbols-outlined" style="font-size:20px;">close</span></button>
+
+    <!-- Cinematic hero banner -->
+    <div class="w-full relative overflow-hidden bg-[#0a0a0a]" style="min-height:200px;">
+      <!-- Film grain overlay -->
+      <div class="absolute inset-0 opacity-30 pointer-events-none z-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giLz48ZmVDb2xvck1hdHJpeCB0eXBlPSJzYXR1cmF0ZSIgdmFsdWVzPSIwIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuMDUiLz48L3N2Zz4=')]"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60 pointer-events-none z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent pointer-events-none z-10"></div>
+      <!-- Background cinematic bars -->
+      <div class="absolute top-0 left-0 right-0 h-6 bg-black z-20"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-6 bg-black z-20"></div>
+      <!-- Gradient background simulating film -->
+      <div class="absolute inset-0 bg-gradient-to-br from-red-950 via-gray-900 to-black"></div>
+      <!-- Content -->
+      <div class="relative z-30 px-8 py-12 flex flex-col sm:flex-row items-start sm:items-end gap-6">
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-red-400 text-[10px] font-bold uppercase tracking-[0.25em]">Media &amp; Creative</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 text-[10px] font-bold border border-yellow-500/30">
+              <span class="material-symbols-outlined text-[10px]">construction</span>Demo / Dev
+            </span>
+          </div>
+          <h2 class="text-white text-3xl sm:text-4xl font-black tracking-tight leading-tight">Nemesis Pictures</h2>
+          <p class="text-white/50 text-sm mt-1 font-medium italic">Production House Website Concept</p>
+        </div>
+        <!-- Film reel icon -->
+        <div class="w-14 h-14 rounded-full border-2 border-white/20 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-white/60 text-[28px]">movie</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div class="p-6 sm:p-10">
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 rounded-full bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-wider">Production House</span>
+        <span class="px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-600 text-xs font-bold uppercase tracking-wider">Demo Project</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">React</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Next.js</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">CSS</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">JavaScript</span>
+      </div>
+
+      <!-- Overview -->
+      <h3 class="text-2xl sm:text-3xl font-black text-on-surface mb-3 tracking-tight">Nemesis Pictures</h3>
+      <p class="text-on-surface-variant text-base leading-relaxed mb-8">
+        A cinematic and immersive production-house website concept developed to showcase films, directors, production work, awards, post-production services, and the creative team. The project focuses on delivering a visually striking web experience suited to a high-end creative media brand. This was built as a demo and was not launched as the official live website.
+      </p>
+
+      <!-- My Role -->
+      <div class="bg-red-500/5 border border-red-500/20 rounded-2xl p-6 mb-8">
+        <h4 class="text-sm font-bold text-red-500 uppercase tracking-widest mb-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          My Role — Web Developer
+        </h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">
+          I handled the complete website development for this project — building the responsive layout, implementing the cinematic UI design, structuring the navigation and pages, and adding interactive visual elements and animations. I was responsible for both desktop and mobile responsiveness and the overall creative presentation of the brand.
+        </p>
+      </div>
+
+      <!-- Features grid -->
+      <h4 class="text-xs font-bold text-on-surface uppercase tracking-widest mb-4">Key Features</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">movie</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Cinematic Visual Design</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Dark, film-inspired aesthetic with immersive visuals and typography suited to a premium production house.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">video_library</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Film / Project Showcase</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Dedicated sections to highlight film projects, productions, and creative work with visual emphasis.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">person_pin</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Directors Section</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Profile pages for directors with filmography and creative highlights.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">workspace_premium</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Awards Section</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Showcase of recognitions, nominations, and industry awards won by the production house.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">tune</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Post-Production Services</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Service pages covering editing, color grading, sound, and other post-production offerings.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">groups</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Creative Team Section</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Team profiles for the creative and production staff with roles and contributions.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">devices</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Responsive Design</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Fully optimized for mobile, tablet, and desktop with consistent cinematic experience across all devices.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-red-500 text-[20px] mt-0.5 shrink-0">animation</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Interactive Visual Elements</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Smooth animations, transitions, and hover interactions enhancing the cinematic feel.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Status note -->
+      <div class="flex items-start gap-3 p-4 rounded-xl bg-yellow-500/5 border border-yellow-500/20 mb-8">
+        <span class="material-symbols-outlined text-yellow-600 text-[20px] mt-0.5 shrink-0">info</span>
+        <p class="text-xs text-on-surface-variant leading-relaxed">
+          <strong class="text-on-surface">Demo / Development Project.</strong> This website was developed as a concept demo and was not launched as the official live website for Nemesis Pictures.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-outline-variant/30">
+        <a href="https://nemesispictures.com/demo/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#1a0a0a] text-red-400 border border-red-500/30 font-bold text-sm hover:bg-red-950 hover:text-red-300 transition-colors shadow-sm">
+          View Demo
+          <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+        </a>
+        <a href="contacts.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-surface-container text-on-surface font-bold text-sm hover:bg-gray-100 hover:text-indigo-600 border border-outline-variant/40 transition-colors">
+          Discuss a Similar Project
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <button onclick="document.getElementById('nemesis-modal').classList.add('hidden');document.body.style.overflow='';" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/50 text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="aquatrack-modal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-black/70 backdrop-blur-sm" style="padding:24px 16px;" onclick="if(event.target===this){this.classList.add('hidden');document.body.style.overflow='';}">
+  <div class="modal-inner relative bg-surface rounded-3xl shadow-2xl" style="width:100%;max-width:896px;margin:24px auto;">
+
+    <!-- Close button -->
+    <button onclick="document.getElementById('aquatrack-modal').classList.add('hidden');document.body.style.overflow='';" class="modal-close-btn dark" aria-label="Close">
+      <span class="material-symbols-outlined" style="font-size:20px;">close</span>
+    </button>
+
+    <!-- Hero image / dashboard banner -->
+    <div class="w-full bg-[#0f172a] relative overflow-hidden" style="aspect-ratio:16/7;">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.12),transparent_60%)] pointer-events-none z-10"></div>
+      <img
+        src="images/aquatrack_dashboard.jpg"
+        alt="AquaTrack Admin Panel Dashboard"
+        class="w-full h-full object-cover object-top"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      />
+      <!-- Fallback if image not yet saved -->
+      <div class="hidden w-full h-full flex-col p-6 sm:p-10 bg-[#0a1628]">
+        <div class="flex items-center gap-3 mb-4 relative z-10">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500 flex items-center justify-center shadow-lg">
+            <span class="material-symbols-outlined text-white text-[20px]">pool</span>
+          </div>
+          <div>
+            <p class="text-cyan-400 text-[10px] font-bold uppercase tracking-widest">Sports &amp; Event Management</p>
+            <h2 class="text-white text-xl font-black tracking-tight">AquaTrack — Mobile App &amp; Admin Panel</h2>
+          </div>
+        </div>
+        <div class="flex gap-4 flex-1 min-h-0 relative z-10">
+          <div class="w-32 shrink-0 bg-white/5 rounded-xl p-3 flex flex-col gap-2 hidden sm:flex text-white/40 text-[10px]">
+            <div class="flex items-center gap-2 px-2 py-2 rounded-lg bg-cyan-500/20 text-cyan-300"><span class="material-symbols-outlined text-[14px]">dashboard</span><span class="font-semibold">Dashboard</span></div>
+            <div class="flex items-center gap-2 px-2 py-2 rounded-lg"><span class="material-symbols-outlined text-[14px]">person</span>Users</div>
+            <div class="flex items-center gap-2 px-2 py-2 rounded-lg"><span class="material-symbols-outlined text-[14px]">event</span>Events</div>
+            <div class="flex items-center gap-2 px-2 py-2 rounded-lg"><span class="material-symbols-outlined text-[14px]">emoji_events</span>Results</div>
+            <div class="flex items-center gap-2 px-2 py-2 rounded-lg"><span class="material-symbols-outlined text-[14px]">payments</span>Payments</div>
+            <div class="flex items-center gap-2 px-2 py-2 rounded-lg"><span class="material-symbols-outlined text-[14px]">badge</span>Members</div>
+          </div>
+          <div class="flex-1 min-w-0 flex flex-col gap-3">
+            <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
+              <div class="bg-white/5 rounded-xl p-3 col-span-1"><p class="text-[9px] text-white/40 uppercase">Revenue</p><p class="text-emerald-400 font-black text-base">₹219</p></div>
+              <div class="bg-white/5 rounded-xl p-3 col-span-1"><p class="text-[9px] text-white/40 uppercase">Members</p><p class="text-cyan-300 font-black text-base">3</p></div>
+              <div class="bg-white/5 rounded-xl p-3 col-span-1"><p class="text-[9px] text-white/40 uppercase">Users</p><p class="text-violet-400 font-black text-base">13</p></div>
+              <div class="bg-white/5 rounded-xl p-3 col-span-1 hidden sm:block"><p class="text-[9px] text-white/40 uppercase">Trial</p><p class="text-amber-400 font-black text-base">8</p></div>
+              <div class="bg-white/5 rounded-xl p-3 col-span-1 hidden sm:block"><p class="text-[9px] text-white/40 uppercase">Events</p><p class="text-pink-400 font-black text-base">1</p></div>
+              <div class="bg-white/5 rounded-xl p-3 col-span-1 hidden sm:block"><p class="text-[9px] text-white/40 uppercase">Active</p><p class="text-green-400 font-black text-base">3/13</p></div>
+            </div>
+            <div class="bg-white/5 rounded-xl p-4 flex-1 flex flex-col">
+              <p class="text-[9px] text-white/40 uppercase tracking-wider mb-3">Live Platform Analytics</p>
+              <div class="flex items-end gap-2 flex-1">
+                <div class="flex-1 bg-emerald-500/30 rounded-sm" style="height:40%"></div>
+                <div class="flex-1 bg-emerald-500/50 rounded-sm" style="height:60%"></div>
+                <div class="flex-1 bg-emerald-400 rounded-sm" style="height:88%"></div>
+                <div class="flex-1 bg-emerald-500/60 rounded-sm" style="height:70%"></div>
+                <div class="flex-1 bg-emerald-500/45 rounded-sm" style="height:55%"></div>
+                <div class="flex-1 bg-emerald-500/35 rounded-sm" style="height:45%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Label overlay -->
+      <div class="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/60 to-transparent px-6 py-4">
+        <span class="text-white text-xs font-bold uppercase tracking-widest opacity-70">AquaTrack Admin Panel — Live Dashboard</span>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div class="p-6 sm:p-10">
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-600 text-xs font-bold uppercase tracking-wider">Sports &amp; Event Management</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Flutter</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Dart</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Firebase</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Cloud Firestore</span>
+        <span class="px-2.5 py-1 rounded-lg bg-surface-container text-xs font-code-sm font-semibold text-on-surface-variant">Firebase Auth</span>
+      </div>
+
+      <!-- Title + description -->
+      <h3 class="text-3xl sm:text-4xl font-black text-on-surface mb-3 tracking-tight">AquaTrack</h3>
+      <p class="text-on-surface-variant text-base leading-relaxed mb-8">
+        AquaTrack is a complete swimming management ecosystem built entirely in-house — comprising a <strong class="text-on-surface">Flutter Mobile App</strong> for athletes and a <strong class="text-on-surface">Flutter Admin Panel</strong> for club admins, officials, and federation managers. Both platforms share a unified Firebase backend and cover the full lifecycle of competitive swimming: athlete registration, event &amp; meet management, heat scheduling, results recording, FINA point calculations, rankings, performance tracking, bulk data imports, and membership management.
+      </p>
+
+      <!-- My Contribution -->
+      <div class="bg-cyan-500/5 border border-cyan-500/20 rounded-2xl p-6 mb-8">
+        <h4 class="text-sm font-bold text-cyan-600 uppercase tracking-widest mb-3 flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">engineering</span>
+          My Role — Full Product Development
+        </h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">
+          I designed and developed the <strong class="text-on-surface">complete AquaTrack ecosystem</strong> — both the <strong class="text-on-surface">Flutter Mobile App</strong> and the <strong class="text-on-surface">Flutter Admin Panel</strong> — end-to-end. My work spanned the full product: mobile UI/UX, admin dashboard, all data management screens, real-time Firestore integrations, Firebase Authentication, bulk Excel &amp; LENEX import pipeline, athlete management workflows, event &amp; registration systems, results &amp; race history, schedule &amp; session management, rankings &amp; FINA point calculations, membership management, and the shared Firebase backend architecture connecting both platforms.
+        </p>
+      </div>
+
+      <!-- Feature grid -->
+      <h4 class="text-base font-bold text-on-surface mb-4 uppercase tracking-widest text-xs">Platform Features</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">manage_accounts</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Athlete Management</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Full athlete profiles, registration workflows, club assignments, and personal bests tracking.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">event</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Event &amp; Meet Management</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Create and manage swimming meets, define events, set qualification criteria, and publish results.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">how_to_reg</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Registration Management</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Online entry collection, entry-time validation, payment tracking, and confirmation workflows.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">emoji_events</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Results &amp; Race History</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Record finishes, split times, DQ management, and historical race archives per athlete.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">schedule</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Schedule &amp; Session Management</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Heat seeding, session scheduling, warm-up pool allocation, and live timeline management.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">leaderboard</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Rankings &amp; FINA Points</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Automatic FINA point calculation, national/club ranking tables, and age-group leaderboards.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">badge</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Membership Management</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Club memberships, renewal tracking, accreditation status, and document storage.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">upload_file</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Bulk Excel / LENEX Import</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Import athlete data, entries, and results from Excel spreadsheets and LENEX XML format.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">lock</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Firebase Authentication</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Role-based access control for admins, coaches, and officials with secure login flows.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+          <span class="material-symbols-outlined text-cyan-600 text-[20px] mt-0.5 shrink-0">smartphone</span>
+          <div>
+            <p class="font-semibold text-on-surface text-sm">Mobile App Integration</p>
+            <p class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">Athlete-facing Flutter mobile app synced in real-time with the admin panel via Firestore.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-outline-variant/30">
+        <a href="contacts.html" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-cyan-600 text-white font-bold text-sm hover:bg-cyan-700 transition-colors shadow-sm">
+          Discuss a Similar Project
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <button onclick="document.getElementById('aquatrack-modal').classList.add('hidden');document.body.style.overflow='';" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-outline-variant/50 text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-colors">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
       
 <!-- SEO Context Section -->
 <section class="py-24 relative overflow-hidden bg-gradient-to-br from-primary via-[#001f5c] to-tertiary text-white group">
@@ -183,7 +1347,7 @@
 <!-- Technologies Section (Modern Pills) -->
 <section class="py-20 bg-surface-container-lowest border-b border-outline-variant/30 relative overflow-hidden">
   <!-- Glowing orbs -->
-  <div class="absolute -right-20 -top-20 w-72 h-72 bg-secondary/10 rounded-full blur-[80px] pointer-events-none"></div>
+  <div class="absolute -right-20 -top-20 w-72 h-72 bg-violet-500/20 rounded-full blur-[100px] pointer-events-none"></div>
   <div class="absolute -left-20 -bottom-20 w-72 h-72 bg-primary/10 rounded-full blur-[80px] pointer-events-none"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -237,17 +1401,19 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-white border-t border-[#e5e5e5] py-12">
-  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
-    <a href="home.html" class="block">
-      <img src="images/logo.png" alt="Apexify Software Solutions" class="h-8 w-auto">
-    </a>
-    <p class="text-sm text-[#888888]">© 2025 Apexify. Rooted in architectural precision.</p>
-    <div class="flex gap-6 text-sm text-[#555555]">
-      <a href="#" class="hover:text-[#1b1b1b] transition-colors">Privacy Policy</a>
-      <a href="#" class="hover:text-[#1b1b1b] transition-colors">Terms of Service</a>
-      <a href="#" class="hover:text-[#1b1b1b] transition-colors">Security Architecture</a>
+<!-- Modern Standardized Footer -->
+<footer class="border-t border-slate-200/80 bg-slate-50 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-3">
+      <a href="home.html" class="flex items-center gap-2" aria-label="Apexify Home">
+        <img src="images/logo.png" alt="Apexify Software Solutions" class="h-9 w-auto object-contain">
+      </a>
+    </div>
+    <p class="text-xs text-slate-500 font-code-sm text-center sm:text-left">© 2026 Apexify. Rooted in architectural precision.</p>
+    <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-600 font-medium">
+      <a class="hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+      <a class="hover:text-primary transition-colors" href="terms-and-conditions.html">Terms of Service</a>
+      <a class="hover:text-primary transition-colors" href="solution.html">Security Architecture</a>
     </div>
   </div>
 </footer>
@@ -260,36 +1426,60 @@
 
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        // Reset all tabs
         tabs.forEach(t => {
-          t.className = 'filter-tab px-5 py-2.5 rounded-full text-sm font-semibold bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all duration-300';
+          t.className = 'filter-tab px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200/80 text-slate-600 hover:text-primary hover:border-primary/40 hover:bg-slate-50 transition-all duration-300 shadow-soft-xs';
         });
-
-        // Set active tab
-        tab.className = 'filter-tab active px-5 py-2.5 rounded-full text-sm font-bold bg-primary text-on-primary shadow-lg transition-all duration-300';
-
+        tab.className = 'filter-tab active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-primary to-secondary text-white shadow-soft-sm transition-all duration-300';
         const category = tab.getAttribute('data-category');
-
         cards.forEach(card => {
           const cardGroup = card.getAttribute('data-group');
-          // Start hide transition
           card.style.transition = 'all 0.4s ease-out';
-          
-          if (category === 'all' || cardGroup.includes(category)) {
+          if (category === 'all' || (cardGroup && cardGroup.includes(category))) {
             card.style.display = 'block';
-            setTimeout(() => {
-              card.style.opacity = '1';
-              card.style.transform = 'scale(1) translateY(0)';
-            }, 50);
+            setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'scale(1) translateY(0)'; }, 50);
           } else {
             card.style.opacity = '0';
             card.style.transform = 'scale(0.95) translateY(10px)';
-            setTimeout(() => {
-              card.style.display = 'none';
-            }, 400); // match transition duration
+            setTimeout(() => { card.style.display = 'none'; }, 400);
           }
         });
       });
+    });
+
+    // Close AquaTrack modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('aquatrack-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+        const unicornModal = document.getElementById('unicorn-modal');
+        if (unicornModal && !unicornModal.classList.contains('hidden')) {
+          unicornModal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+        const nemesisModal = document.getElementById('nemesis-modal');
+        if (nemesisModal && !nemesisModal.classList.contains('hidden')) {
+          nemesisModal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+        const saraModal = document.getElementById('sara-modal');
+        if (saraModal && !saraModal.classList.contains('hidden')) {
+          saraModal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+        const a1Modal = document.getElementById('a1-modal');
+        if (a1Modal && !a1Modal.classList.contains('hidden')) {
+          a1Modal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+        const sevensquareModal = document.getElementById('sevensquare-modal');
+        if (sevensquareModal && !sevensquareModal.classList.contains('hidden')) {
+          sevensquareModal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+      }
     });
   });
 </script>

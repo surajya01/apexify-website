@@ -3,64 +3,121 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Our Software Development Process | Apexify Software Solutions</title>
-  <meta name="description" content="Discover Apexify's end-to-end agile software development process. From architecture and discovery to continuous delivery, QA, and scalable deployment.">
-  <!-- Material Symbols Outlined -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <title>Why Choose Apexify | Enterprise Software Architecture & Digital Products</title>
+  <meta name="description" content="Discover why enterprises trust Apexify for scalable software architecture, zero-trust security, and high-velocity engineering delivery.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fonts & Material Symbols -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS -->
-    <!-- Tailwind CSS (Local Build) -->
+  <!-- Tailwind CSS (Local Build) -->
   <link rel="stylesheet" href="dist/output.css">
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
-<!-- Apexify Header / Navigation Anchor -->
-<header class="sticky top-0 z-50 bg-surface/95 backdrop-blur border-b border-outline-variant/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between whitespace-nowrap">
-<!-- Brand -->
-<a class="flex items-center gap-3 text-primary focus:outline-none" href="home.html"><img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain"></a>
-<!-- Desktop Navigation Links -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="services.html">Services</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="why-us.html">Why Us</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="our_work.html">Work</a>
-<a class="text-primary text-sm font-medium transition-colors border-b-2 border-primary py-[22px]" href="process.html">Process</a>
-<a class="text-on-surface-variant hover:text-primary text-sm font-medium transition-colors" href="solution.html">Architecture</a>
-</nav>
-<!-- CTAs -->
-<div class="flex items-center gap-3">
-<a class="hidden sm:inline-flex items-center justify-center rounded-lg h-10 px-4 bg-surface-container text-on-surface hover:bg-surface-container-high text-sm font-semibold border border-outline-variant/40 transition-colors" href="our_work.html">
-            View Our Work
-          </a>
-<a class="inline-flex items-center gap-1.5 justify-center rounded-lg h-10 px-4 bg-primary-container text-surface-container-lowest hover:bg-primary text-sm font-semibold tracking-[0.015em] shadow-sm transition-all" href="contacts.html">
-<span class="">Start a Project</span>
-<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</div>
-</header>
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-[#071739] via-[#0B245E] to-[#0A3078] border-b border-blue-900/40 text-slate-200 py-2.5 px-4 text-xs font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/20 text-cyan-300 border border-cyan-400/30 text-[11px] font-semibold uppercase tracking-wider shadow-xs">
+          <span class="size-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          Enterprise Standard
+        </span>
+        <span class="text-slate-200 text-xs sm:text-sm">
+          99.9% Uptime SLA • Zero-Trust Security Protocols • Dedicated Architectural Squads
+        </span>
+      </div>
+      <a class="inline-flex items-center gap-1.5 text-amber-300 hover:text-white text-xs font-semibold group transition-all" href="contacts.html">
+        Explore Partnership
+        <span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </aside>
 
-    <main class="relative min-h-screen w-full flex-col bg-[#F7F9FB] overflow-hidden pt-0 pb-24">
+  <!-- Sticky Glass Header -->
+  <header class="sticky top-0 z-50 glass-header border-b border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand -->
+      <a class="flex items-center gap-3 text-primary focus:outline-none group" href="home.html">
+        <img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-200">
+      </a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="services.html">Services</a>
+        <a class="text-primary font-bold py-1 relative after:w-full after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0" href="why-us.html">Why Us</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="our_work.html">Work</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="process.html">Process</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="solution.html">Architecture</a>
+      </nav>
+      <!-- CTAs -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center rounded-xl h-10 px-4 bg-slate-100 hover:bg-slate-200/80 text-slate-800 hover:text-primary text-sm font-semibold border border-slate-200/80 transition-all duration-200" href="our_work.html">View Our Work</a>
+        <a class="hidden md:inline-flex items-center gap-1.5 justify-center rounded-xl h-10 px-5 bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 text-sm font-semibold tracking-wide active:scale-95" href="contacts.html">
+          <span>Start a Project</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <!-- Hamburger Button -->
+        <button id="menu-button" aria-label="Open menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-10 h-10 rounded-xl text-slate-700 hover:bg-slate-100 border border-slate-200/60 transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Drawer (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-4 space-y-1.5 shadow-xl shadow-slate-900/5 relative z-50">
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="services.html">Services</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-semibold text-primary bg-primary/5 transition-colors" href="why-us.html">Why Us</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="our_work.html">Work</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="process.html">Process</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="solution.html">Architecture</a>
+      <div class="pt-2 border-t border-slate-200/80">
+        <a class="block w-full text-center mt-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold text-sm shadow-md transition-all hover:shadow-lg active:scale-95" href="contacts.html">Start a Project</a>
+      </div>
+    </div>
+  </header>
+  <script>
+  (function(){
+    var btn = document.getElementById('menu-button') || document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if(btn && menu){
+      btn.addEventListener('click', function(){
+        var isHidden = menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isHidden));
+        var icon = btn.querySelector('.material-symbols-outlined');
+        if(icon) {
+          icon.textContent = isHidden ? 'menu' : 'close';
+        }
+      });
+    }
+  })();
+  </script>
+
+  <main class="relative min-h-screen w-full flex-col bg-[#F8FAFC] overflow-hidden pt-0 pb-16">
     
     <!-- Clean Editorial Hero Section -->
-    <section class="relative w-full pt-40 pb-24 lg:pt-56 lg:pb-32 overflow-hidden mb-24 z-10 border-b border-gray-200">
+    <section class="relative w-full pt-16 pb-16 lg:pt-24 lg:pb-20 overflow-hidden mb-12 z-10 border-b border-slate-200/80 bg-[url('images/hero_bg_why_us.jpg')] bg-cover bg-center bg-no-repeat">
+      <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-[#F8FAFC]/95 backdrop-blur-[2px]"></div>
+      <!-- Ambient Colorful Glow Orbs -->
+      <div class="pointer-events-none absolute -top-24 left-1/4 -z-0 h-96 w-96 rounded-full bg-gradient-to-tr from-blue-500/20 via-cyan-400/20 to-indigo-500/20 blur-3xl"></div>
+      <div class="pointer-events-none absolute bottom-0 right-1/4 -z-0 h-96 w-96 rounded-full bg-gradient-to-br from-purple-500/20 via-pink-400/15 to-amber-400/20 blur-3xl"></div>
+      
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white border border-gray-200 text-on-surface-variant text-[11px] font-bold tracking-[0.2em] uppercase mb-8 shadow-sm">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-blue-200 text-primary text-xs font-bold tracking-wider uppercase mb-8 shadow-soft-xs">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
           The Apexify Advantage
         </div>
-        <h1 class="text-6xl md:text-8xl font-serif text-[#1b1b1b] mb-10 leading-[1.1] tracking-tight">
-          Why Choose <br/><span class="text-primary italic">Apexify?</span>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.1] tracking-tight font-display">
+          Why Choose <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-[#0070BA]">Apexify?</span>
         </h1>
-        <p class="text-lg md:text-xl text-[#555555] max-w-3xl mx-auto leading-relaxed mb-12">
+        <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
           We are more than just an outsourcing agency. We are a dedicated technical partner that engineers robust, secure, and highly scalable software solutions tailored to your enterprise's most complex challenges.
         </p>
-        <div class="flex items-center justify-center gap-4">
-          <a class="inline-flex items-center gap-2 justify-center rounded border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white px-8 py-3 text-sm font-bold tracking-widest uppercase transition-all duration-300" href="contacts.html">
-            Let's Go!
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a class="inline-flex items-center gap-2 justify-center rounded-xl bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary/30 px-8 py-3.5 text-sm font-bold tracking-wide uppercase transition-all duration-300 shadow-soft-sm active:scale-95" href="contacts.html">
+            <span>Schedule Consultation</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
           </a>
-          <a class="inline-flex items-center gap-2 justify-center rounded border border-gray-300 bg-white text-[#333333] hover:border-primary hover:text-primary px-8 py-3 text-sm font-bold tracking-widest uppercase transition-all duration-300 shadow-sm" href="our_work.html">
+          <a class="inline-flex items-center gap-2 justify-center rounded-xl border border-slate-300 bg-white text-slate-700 hover:border-primary hover:text-primary px-8 py-3.5 text-sm font-bold tracking-wide uppercase transition-all duration-300 shadow-soft-xs hover:shadow-soft-sm" href="our_work.html">
             <span class="material-symbols-outlined text-[18px]">play_circle</span>
             View Work
           </a>
@@ -68,347 +125,348 @@
       </div>
     </section>
 
-      <!-- Stats / SEO Context Section -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-24">
-        <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 text-center shadow-sm animate-fade-in-up" style="animation-delay: 0.1s;">
-          <h3 class="text-4xl font-black text-secondary mb-2">99.9%</h3>
-          <p class="text-sm font-semibold text-on-surface-variant uppercase tracking-wider">Uptime SLA</p>
+    <!-- Stats / SEO Context Section (Colorful Metric Cards) -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="bg-gradient-to-br from-emerald-500/10 via-white to-teal-50/50 border border-emerald-200/90 rounded-2xl p-6 text-center shadow-soft-xs hover:shadow-soft-md hover:shadow-emerald-500/10 hover:border-emerald-400 transition-all duration-300 group">
+        <h3 class="text-4xl lg:text-5xl font-black text-emerald-600 mb-2 tracking-tight group-hover:scale-105 transition-transform">99.9%</h3>
+        <p class="text-xs font-bold text-slate-600 uppercase tracking-wider">Uptime SLA Guaranteed</p>
+      </div>
+      <div class="bg-gradient-to-br from-blue-500/10 via-white to-indigo-50/50 border border-blue-200/90 rounded-2xl p-6 text-center shadow-soft-xs hover:shadow-soft-md hover:shadow-blue-500/10 hover:border-blue-400 transition-all duration-300 group">
+        <h3 class="text-4xl lg:text-5xl font-black text-blue-600 mb-2 tracking-tight group-hover:scale-105 transition-transform">35+</h3>
+        <p class="text-xs font-bold text-slate-600 uppercase tracking-wider">Enterprise Launches</p>
+      </div>
+      <div class="bg-gradient-to-br from-amber-500/10 via-white to-orange-50/50 border border-amber-200/90 rounded-2xl p-6 text-center shadow-soft-xs hover:shadow-soft-md hover:shadow-amber-500/10 hover:border-amber-400 transition-all duration-300 group">
+        <h3 class="text-4xl lg:text-5xl font-black text-amber-500 mb-2 tracking-tight group-hover:scale-105 transition-transform">0</h3>
+        <p class="text-xs font-bold text-slate-600 uppercase tracking-wider">Security Breaches</p>
+      </div>
+      <div class="bg-gradient-to-br from-purple-500/10 via-white to-violet-50/50 border border-purple-200/90 rounded-2xl p-6 text-center shadow-soft-xs hover:shadow-soft-md hover:shadow-purple-500/10 hover:border-purple-400 transition-all duration-300 group">
+        <h3 class="text-4xl lg:text-5xl font-black text-purple-600 mb-2 tracking-tight group-hover:scale-105 transition-transform">24/7</h3>
+        <p class="text-xs font-bold text-slate-600 uppercase tracking-wider">Active Monitoring</p>
+      </div>
+    </div>
+
+    <!-- Mission & Vision Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        <!-- Mission -->
+        <div class="bg-gradient-to-br from-blue-50/60 via-white to-indigo-50/30 p-8 md:p-12 rounded-3xl border border-blue-200/80 shadow-soft-sm relative overflow-hidden group hover:border-primary/50 hover:shadow-soft-md transition-all duration-300">
+          <div class="absolute -left-12 -top-12 w-48 h-48 bg-primary/15 rounded-full blur-[60px] group-hover:bg-primary/25 transition-all duration-700 pointer-events-none"></div>
+          <div class="relative z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+              <span class="material-symbols-outlined text-[16px]">track_changes</span>
+              Our Mission
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">Empowering Enterprises Through Resilient Code</h2>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Our mission is to bridge the gap between complex business challenges and scalable software solutions. We strive to empower high-growth startups and established enterprises by engineering digital products that drive operational efficiency, enhance user engagement, and accelerate long-term revenue growth. We don't just write code; we build the foundational systems that power modern digital economies.
+            </p>
+          </div>
         </div>
-        <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 text-center shadow-sm animate-fade-in-up" style="animation-delay: 0.2s;">
-          <h3 class="text-4xl font-black text-primary mb-2">35+</h3>
-          <p class="text-sm font-semibold text-on-surface-variant uppercase tracking-wider">Enterprise Launches</p>
-        </div>
-        <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 text-center shadow-sm animate-fade-in-up" style="animation-delay: 0.3s;">
-          <h3 class="text-4xl font-black text-tertiary-fixed-dim mb-2">0</h3>
-          <p class="text-sm font-semibold text-on-surface-variant uppercase tracking-wider">Data Breaches</p>
-        </div>
-        <div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 text-center shadow-sm animate-fade-in-up" style="animation-delay: 0.4s;">
-          <h3 class="text-4xl font-black text-secondary-container mb-2">24/7</h3>
-          <p class="text-sm font-semibold text-on-surface-variant uppercase tracking-wider">Active Monitoring</p>
+        
+        <!-- Vision -->
+        <div class="bg-gradient-to-br from-cyan-50/60 via-white to-teal-50/30 p-8 md:p-12 rounded-3xl border border-cyan-200/80 shadow-soft-sm relative overflow-hidden group hover:border-secondary/50 hover:shadow-soft-md transition-all duration-300">
+          <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-secondary/15 rounded-full blur-[60px] group-hover:bg-secondary/25 transition-all duration-700 pointer-events-none"></div>
+          <div class="relative z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-100/80 border border-cyan-200 text-secondary text-xs font-bold uppercase tracking-wider mb-6">
+              <span class="material-symbols-outlined text-[16px]">visibility</span>
+              Our Vision
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">The Future of Zero-Debt Architecture</h2>
+            <p class="text-slate-600 text-base leading-relaxed">
+              We envision a digital landscape where software liabilities—like technical debt, security vulnerabilities, and poor performance—are a thing of the past. By pioneering clean architecture, zero-trust security models, and cloud-native microservices, Apexify aims to be the globally recognized standard for engineering excellence and flawless software delivery.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Mission & Vision Section -->
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 relative animate-fade-in-up">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <!-- Mission -->
-          <div class="bg-surface-container-lowest p-8 md:p-12 rounded-3xl border border-outline-variant/30 shadow-sm relative overflow-hidden group hover:border-primary/40 hover:shadow-md transition-all duration-300">
-            <div class="absolute -left-12 -top-12 w-48 h-48 bg-primary/10 rounded-full blur-[50px] group-hover:bg-primary/20 transition-all duration-700"></div>
-            <div class="relative z-10">
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-primary text-xs font-bold uppercase mb-6">
-                <span class="material-symbols-outlined text-[16px]">track_changes</span>
-                Our Mission
+    <!-- Core Differentiators Heading -->
+    <div class="text-center mb-12">
+      <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-2 block">Enterprise Advantages</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-primary tracking-tight mb-4">Core Differentiators</h2>
+      <p class="text-slate-600 max-w-2xl mx-auto text-base">Why high-growth startups and scaling businesses trust us with their core IP.</p>
+    </div>
+
+    <!-- Core Differentiators Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+        
+        <!-- Feature 1: Engineering Excellence -->
+        <div class="bg-white border border-blue-200/90 rounded-3xl p-8 flex flex-col group hover:border-blue-500 hover:shadow-blue-500/15 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-300">
+          <div class="mb-6 border-b border-slate-100 pb-5 flex items-center justify-between">
+            <span class="text-5xl font-black text-blue-200 group-hover:text-blue-600 transition-colors duration-300">01</span>
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 border border-blue-100">
+              <span class="material-symbols-outlined text-[26px]">architecture</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors">Engineering Excellence</h3>
+          <p class="text-slate-600 leading-relaxed text-sm mb-6 flex-1">
+            We prioritize clean, maintainable code and modern technology stacks. Our engineering team builds resilient systems designed to perform reliably under heavy loads and scale effortlessly as your user base grows.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
+            <span class="px-3 py-1 bg-blue-50 text-xs font-bold text-blue-700 rounded-lg border border-blue-100">Microservices</span>
+            <span class="px-3 py-1 bg-blue-50 text-xs font-bold text-blue-700 rounded-lg border border-blue-100">Clean Architecture</span>
+          </div>
+        </div>
+
+        <!-- Feature 2: Zero-Trust Security -->
+        <div class="bg-white border border-cyan-200/90 rounded-3xl p-8 flex flex-col group hover:border-cyan-500 hover:shadow-cyan-500/15 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-300">
+          <div class="mb-6 border-b border-slate-100 pb-5 flex items-center justify-between">
+            <span class="text-5xl font-black text-cyan-200 group-hover:text-cyan-600 transition-colors duration-300">02</span>
+            <div class="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 border border-cyan-100">
+              <span class="material-symbols-outlined text-[26px]">shield_lock</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 tracking-tight group-hover:text-cyan-600 transition-colors">Zero-Trust Security</h3>
+          <p class="text-slate-600 leading-relaxed text-sm mb-6 flex-1">
+            Data protection isn't an afterthought—it's built into our foundation. We implement industry-leading security practices and compliance standards from the very first line of code.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
+            <span class="px-3 py-1 bg-cyan-50 text-xs font-bold text-cyan-700 rounded-lg border border-cyan-100">HIPAA Ready</span>
+            <span class="px-3 py-1 bg-cyan-50 text-xs font-bold text-cyan-700 rounded-lg border border-cyan-100">OWASP Top 10</span>
+          </div>
+        </div>
+        
+        <!-- Feature 3: Agile Delivery -->
+        <div class="bg-white border border-amber-200/90 rounded-3xl p-8 flex flex-col group hover:border-amber-500 hover:shadow-amber-500/15 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-300">
+          <div class="mb-6 border-b border-slate-100 pb-5 flex items-center justify-between">
+            <span class="text-5xl font-black text-amber-200 group-hover:text-amber-500 transition-colors duration-300">03</span>
+            <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 border border-amber-100">
+              <span class="material-symbols-outlined text-[26px]">speed</span>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 tracking-tight group-hover:text-amber-600 transition-colors">Agile &amp; Transparent</h3>
+          <p class="text-slate-600 leading-relaxed text-sm mb-6 flex-1">
+            We integrate seamlessly with your internal teams. Through iterative sprints, continuous integration, and transparent reporting, you always have full visibility into our progress.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
+            <span class="px-3 py-1 bg-amber-50 text-xs font-bold text-amber-700 rounded-lg border border-amber-100">Automated CI/CD</span>
+            <span class="px-3 py-1 bg-amber-50 text-xs font-bold text-amber-700 rounded-lg border border-amber-100">Bi-Weekly Sprints</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Moving Cards Marquee Section -->
+    <div class="relative mx-auto mb-16 max-w-6xl rounded-3xl border border-slate-200/80 bg-white p-6 sm:p-8 shadow-soft-xs">
+      <div class="mb-6 flex items-end justify-between gap-4 px-1">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.12em] text-secondary">Technical foundations</p>
+          <p class="mt-1 text-sm text-slate-600">Explore the engineering standards behind every delivery.</p>
+        </div>
+        <span class="hidden items-center gap-1.5 text-xs font-semibold text-secondary sm:inline-flex">
+          <span class="material-symbols-outlined text-base">swipe</span>
+          Scroll to explore
+        </span>
+      </div>
+      <div class="overflow-x-auto overscroll-x-contain pb-3 snap-x snap-mandatory scroll-smooth hide-scrollbar" tabindex="0" role="region" aria-label="Technical capabilities. Scroll horizontally to view more cards.">
+        <div class="flex gap-6 w-max px-1">
+          <!-- Card 1 -->
+          <div class="w-80 shrink-0 snap-start bg-slate-50 p-6 rounded-2xl border border-slate-200/80 shadow-soft-xs flex flex-col gap-3 hover:border-primary/40 hover:bg-white transition-all duration-200">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">speed</span>
               </div>
-              <h2 class="text-3xl font-extrabold text-on-surface mb-4">Empowering Enterprises Through Technology</h2>
-              <p class="text-on-surface-variant text-base leading-relaxed">
-                Our mission is to bridge the gap between complex business challenges and scalable software solutions. We strive to empower high-growth startups and established enterprises by engineering digital products that drive operational efficiency, enhance user engagement, and accelerate long-term revenue growth. We don't just write code; we build the foundational systems that power modern digital economies.
-              </p>
+              <h4 class="font-bold text-slate-900">Sub-Second Load</h4>
             </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Edge caching and static site generation for instant global delivery across all user continents.</p>
           </div>
           
-          <!-- Vision -->
-          <div class="bg-surface-container-lowest p-8 md:p-12 rounded-3xl border border-outline-variant/30 shadow-sm relative overflow-hidden group hover:border-secondary/40 hover:shadow-md transition-all duration-300">
-            <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-secondary/10 rounded-full blur-[50px] group-hover:bg-secondary/20 transition-all duration-700"></div>
-            <div class="relative z-10">
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-secondary text-xs font-bold uppercase mb-6">
-                <span class="material-symbols-outlined text-[16px]">visibility</span>
-                Our Vision
+          <!-- Card 2 -->
+          <div class="w-80 shrink-0 snap-start bg-slate-50 p-6 rounded-2xl border border-slate-200/80 shadow-soft-xs flex flex-col gap-3 hover:border-secondary/40 hover:bg-white transition-all duration-200">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-cyan-100 text-secondary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">security</span>
               </div>
-              <h2 class="text-3xl font-extrabold text-on-surface mb-4">The Future of Digital Architecture</h2>
-              <p class="text-on-surface-variant text-base leading-relaxed">
-                We envision a digital landscape where software liabilities—like technical debt, security vulnerabilities, and poor performance—are a thing of the past. By pioneering clean architecture, zero-trust security models, and cloud-native microservices, Apexify aims to be the globally recognized standard for engineering excellence and flawless software delivery.
-              </p>
+              <h4 class="font-bold text-slate-900">SOC2 Ready</h4>
             </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Enterprise-grade data encryption at rest and in transit with complete audit trail integrity.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-80 shrink-0 snap-start bg-slate-50 p-6 rounded-2xl border border-slate-200/80 shadow-soft-xs flex flex-col gap-3 hover:border-amber-400/50 hover:bg-white transition-all duration-200">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">code_blocks</span>
+              </div>
+              <h4 class="font-bold text-slate-900">Clean Architecture</h4>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Modular codebases allowing high scalability without accumulating crippling technical debt.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-80 shrink-0 snap-start bg-slate-50 p-6 rounded-2xl border border-slate-200/80 shadow-soft-xs flex flex-col gap-3 hover:border-primary/40 hover:bg-white transition-all duration-200">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-[20px]">hub</span>
+              </div>
+              <h4 class="font-bold text-slate-900">Microservices</h4>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">Decoupled services using Docker, cloud functions, and Kubernetes orchestration.</p>
           </div>
         </div>
-      </section>
-
-      <div class="text-center mb-16 animate-fade-in-up">
-        <h2 class="text-3xl font-bold text-primary tracking-tight mb-4">Core Differentiators</h2>
-        <p class="text-on-surface-variant max-w-2xl mx-auto">Why high-growth startups and Fortune 500s trust us with their core IP.</p>
       </div>
+    </div>
 
-      <!-- Core Differentiators Redesign: Editorial / Agency Vibe -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
-          
-          <!-- Feature 1: Engineering Excellence -->
-          <div class="flex flex-col group">
-            <div class="mb-8 border-b-2 border-primary/20 pb-6 flex items-center justify-between">
-              <span class="text-6xl font-black text-surface-container-high/50 group-hover:text-primary transition-colors duration-500">01</span>
-              <span class="material-symbols-outlined text-[32px] text-primary">architecture</span>
-            </div>
-            <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Engineering Excellence</h3>
-            <p class="text-on-surface-variant leading-relaxed text-base mb-8">
-              We prioritize clean, maintainable code and modern technology stacks. Our engineering team builds resilient systems designed to perform reliably under heavy loads and scale effortlessly as your user base grows.
-            </p>
-            <div class="flex flex-wrap gap-2 mt-auto">
-              <span class="px-4 py-1 bg-surface-container-lowest text-xs font-bold text-on-surface rounded border border-outline-variant/30">Microservices</span>
-              <span class="px-4 py-1 bg-surface-container-lowest text-xs font-bold text-on-surface rounded border border-outline-variant/30">Clean Arch</span>
-            </div>
-          </div>
-
-          <!-- Feature 2: Zero-Trust Security -->
-          <div class="flex flex-col group">
-            <div class="mb-8 border-b-2 border-secondary/20 pb-6 flex items-center justify-between">
-              <span class="text-6xl font-black text-surface-container-high/50 group-hover:text-secondary transition-colors duration-500">02</span>
-              <span class="material-symbols-outlined text-[32px] text-secondary">shield_lock</span>
-            </div>
-            <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Zero-Trust Security</h3>
-            <p class="text-on-surface-variant leading-relaxed text-base mb-8">
-              Data protection isn't an afterthought—it's built into our foundation. We implement industry-leading security practices and compliance standards from the very first line of code.
-            </p>
-            <div class="flex flex-wrap gap-2 mt-auto">
-              <span class="px-4 py-1 bg-surface-container-lowest text-xs font-bold text-on-surface rounded border border-outline-variant/30">HIPAA</span>
-              <span class="px-4 py-1 bg-surface-container-lowest text-xs font-bold text-on-surface rounded border border-outline-variant/30">SOC2</span>
-            </div>
-          </div>
-          
-          <!-- Feature 3: Agile Delivery -->
-          <div class="flex flex-col group">
-            <div class="mb-8 border-b-2 border-tertiary-fixed-dim/20 pb-6 flex items-center justify-between">
-              <span class="text-6xl font-black text-surface-container-high/50 group-hover:text-tertiary-fixed-dim transition-colors duration-500">03</span>
-              <span class="material-symbols-outlined text-[32px] text-tertiary-fixed-dim">speed</span>
-            </div>
-            <h3 class="text-2xl font-bold text-on-surface mb-6 tracking-tight">Agile & Transparent</h3>
-            <p class="text-on-surface-variant leading-relaxed text-base mb-8">
-              We integrate seamlessly with your internal teams. Through iterative sprints, continuous integration, and transparent reporting, you always have full visibility into our progress.
-            </p>
-            <div class="flex flex-wrap gap-2 mt-auto">
-              <span class="px-4 py-1 bg-surface-container-lowest text-xs font-bold text-on-surface rounded border border-outline-variant/30">CI/CD</span>
-              <span class="px-4 py-1 bg-surface-container-lowest text-xs font-bold text-on-surface rounded border border-outline-variant/30">Sprints</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
+    <!-- SEO Rich Content Block (Split Layout) -->
+    <section class="max-w-6xl mx-auto bg-white border border-slate-200/80 rounded-3xl p-8 md:p-14 mb-16 relative overflow-hidden shadow-soft-sm">
+      <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-[80px] pointer-events-none"></div>
       
-      <!-- Moving Cards Marquee Section -->
-      <div class="mb-24 overflow-hidden py-10 relative">
-        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10"></div>
-        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">Architectural Integrity</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tight">
+            Building Digital Assets, <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">Not Liabilities.</span>
+          </h2>
+          <div class="space-y-4 text-slate-600 text-base leading-relaxed">
+            <p>
+              In today's fast-paced digital economy, subpar software architecture is a massive business risk. At Apexify, we approach every project with a product-first mindset. Whether you are building an innovative FinTech application, a robust healthcare portal, or a global e-commerce platform, the foundation must be flawless.
+            </p>
+            <p>
+              We don't just assemble offshore teams; we deploy highly cohesive squads of senior architects, product designers, and full-stack developers. By combining cutting-edge tools with battle-tested engineering methodologies, we drastically reduce time-to-market while ensuring long-term code maintainability.
+            </p>
+            <div class="font-semibold text-primary text-base mt-4 border-l-4 border-secondary pl-4 py-2 bg-gradient-to-r from-blue-50 to-transparent rounded-r-lg">
+              Your vision deserves enterprise-grade execution.
+            </div>
+          </div>
+        </div>
         
-        <div class="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
+        <!-- Animated UI Mockup / Visual Context -->
+        <div class="relative h-[380px] w-full hidden md:block group">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,98,160,0.08),transparent_70%)]"></div>
           
-          <!-- Duplicate group for infinite scroll effect -->
-          <div class="flex gap-6 w-max">
-            <!-- Card -->
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">speed</span></div>
-                <h4 class="font-bold text-on-surface">Sub-Second Load</h4>
+          <!-- Card 1 -->
+          <div class="absolute top-[8%] right-[8%] w-[270px] bg-white p-5 rounded-2xl shadow-soft-lg border border-slate-200/80 transform -rotate-6 transition-transform duration-500 group-hover:-rotate-3 group-hover:translate-y-2 z-20">
+            <div class="flex justify-between items-center mb-3">
+              <div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[16px]">done_all</span>
               </div>
-              <p class="text-sm text-on-surface-variant">Edge caching and static site generation for instant global delivery.</p>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">Pass 100%</span>
             </div>
-            
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">security</span></div>
-                <h4 class="font-bold text-on-surface">SOC2 Compliant</h4>
-              </div>
-              <p class="text-sm text-on-surface-variant">Enterprise-grade data encryption at rest and in transit.</p>
-            </div>
+            <div class="w-3/4 h-2.5 bg-slate-200 rounded-full mb-2"></div>
+            <div class="w-1/2 h-2.5 bg-slate-100 rounded-full"></div>
+          </div>
 
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-tertiary-fixed-dim/20 text-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">code_blocks</span></div>
-                <h4 class="font-bold text-on-surface">Clean Architecture</h4>
-              </div>
-              <p class="text-sm text-on-surface-variant">Modular codebases allowing high scalability without technical debt.</p>
-            </div>
-
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-primary-container/30 text-on-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">hub</span></div>
-                <h4 class="font-bold text-on-surface">Microservices</h4>
-              </div>
-              <p class="text-sm text-on-surface-variant">Decoupled services using Docker, AWS, and Kubernetes orchestration.</p>
+          <!-- Card 2 -->
+          <div class="absolute top-[32%] left-[4%] w-[310px] bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-2xl shadow-soft-xl border border-blue-400/20 transform rotate-2 transition-transform duration-500 group-hover:rotate-0 group-hover:-translate-y-2 z-30">
+            <h4 class="font-bold text-base mb-2 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">analytics</span>
+              Architecture Audit
+            </h4>
+            <p class="text-xs text-white/90 leading-relaxed mb-4">
+              Performance Score: 99/100. Database indexing, CDN edge distribution &amp; tokenized authentication validated.
+            </p>
+            <div class="flex gap-2">
+              <span class="px-2.5 py-0.5 bg-white/20 rounded-md text-[11px] font-medium backdrop-blur-sm">React</span>
+              <span class="px-2.5 py-0.5 bg-white/20 rounded-md text-[11px] font-medium backdrop-blur-sm">Node.js</span>
+              <span class="px-2.5 py-0.5 bg-white/20 rounded-md text-[11px] font-medium backdrop-blur-sm">PostgreSQL</span>
             </div>
           </div>
           
-          <!-- Cloned Group -->
-          <div class="flex gap-6 w-max">
-            <!-- Card -->
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">speed</span></div>
-                <h4 class="font-bold text-on-surface">Sub-Second Load</h4>
+          <!-- Card 3 -->
+          <div class="absolute bottom-[8%] right-[16%] w-[240px] bg-white p-4 rounded-2xl shadow-soft-md border border-slate-200/80 transform rotate-6 transition-transform duration-500 group-hover:rotate-10 group-hover:translate-x-2 z-10">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
               </div>
-              <p class="text-sm text-on-surface-variant">Edge caching and static site generation for instant global delivery.</p>
-            </div>
-            
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">security</span></div>
-                <h4 class="font-bold text-on-surface">SOC2 Compliant</h4>
+              <div class="space-y-1.5 flex-1">
+                <div class="w-full h-2 bg-slate-200 rounded-full"></div>
+                <div class="w-2/3 h-2 bg-slate-100 rounded-full"></div>
               </div>
-              <p class="text-sm text-on-surface-variant">Enterprise-grade data encryption at rest and in transit.</p>
-            </div>
-
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-tertiary-fixed-dim/20 text-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">code_blocks</span></div>
-                <h4 class="font-bold text-on-surface">Clean Architecture</h4>
-              </div>
-              <p class="text-sm text-on-surface-variant">Modular codebases allowing high scalability without technical debt.</p>
-            </div>
-
-            <div class="w-80 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col gap-4">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-primary-container/30 text-on-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">hub</span></div>
-                <h4 class="font-bold text-on-surface">Microservices</h4>
-              </div>
-              <p class="text-sm text-on-surface-variant">Decoupled services using Docker, AWS, and Kubernetes orchestration.</p>
             </div>
           </div>
-
         </div>
       </div>
+    </section>
 
-
-      <!-- SEO Rich Content Block (Split Layout) -->
-      <section class="max-w-6xl mx-auto bg-surface-container-low border border-outline-variant/40 rounded-3xl p-8 md:p-14 mb-24 animate-fade-in-up relative overflow-hidden">
-        <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-primary/10 rounded-full blur-[80px] pointer-events-none"></div>
+    <!-- Call to Action Banner -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <section class="bg-gradient-to-r from-[#071739] via-[#0B245E] to-[#0062A0] rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-14 shadow-soft-xl relative overflow-hidden group">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,rgba(0,166,255,0.15),transparent_60%)] -translate-y-1/2 translate-x-1/3 group-hover:bg-[radial-gradient(circle_at_center,rgba(0,166,255,0.25),transparent_70%)] transition-colors duration-700 pointer-events-none"></div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-          <div>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-6 leading-tight">Building Digital Assets,<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-tertiary-fixed-dim">Not Liabilities.</span></h2>
-            <div class="space-y-5 text-on-surface-variant text-base leading-relaxed">
-              <p>
-                In today's fast-paced digital economy, subpar software architecture is a massive business risk. At Apexify, we approach every project with a product-first mindset. Whether you are building an innovative FinTech application, a robust healthcare portal, or a global e-commerce platform, the foundation must be flawless.
-              </p>
-              <p>
-                We don't just assemble offshore teams; we deploy highly cohesive squads of senior architects, product designers, and full-stack developers. By combining cutting-edge tools (like React, Node.js, and AWS) with battle-tested engineering methodologies, we drastically reduce time-to-market while ensuring long-term code maintainability.
-              </p>
-              <p class="font-semibold text-primary text-lg mt-4 border-l-4 border-secondary pl-4 py-1 bg-gradient-to-r from-secondary/5 to-transparent">
-                Your vision deserves enterprise-grade execution.
-              </p>
-            </div>
-          </div>
-          
-          <!-- Animated UI Mockup / Visual Context -->
-          <div class="relative h-[400px] w-full hidden md:block group">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,98,160,0.1),transparent_70%)] animate-pulse-glow"></div>
-            
-            <!-- Card 1 -->
-            <div class="absolute top-[10%] right-[10%] w-[280px] bg-surface-container-lowest p-5 rounded-2xl shadow-[0_15px_35px_rgba(0,16,59,0.1)] border border-outline-variant/30 transform -rotate-6 transition-transform duration-700 group-hover:-rotate-3 group-hover:translate-y-2 z-20">
-              <div class="flex justify-between items-center mb-4">
-                <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-[16px] text-primary">done_all</span></div>
-                <div class="w-16 h-2 bg-surface-container rounded-full"></div>
-              </div>
-              <div class="w-3/4 h-3 bg-surface-variant rounded-full mb-2"></div>
-              <div class="w-1/2 h-3 bg-surface-variant rounded-full"></div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="absolute top-[35%] left-[5%] w-[300px] bg-primary text-on-primary p-6 rounded-2xl shadow-[0_20px_40px_rgba(0,16,59,0.2)] border border-primary-fixed/20 transform rotate-3 transition-transform duration-700 group-hover:rotate-0 group-hover:-translate-y-2 z-30 backdrop-blur-md bg-opacity-95">
-              <h4 class="font-bold text-lg mb-2 flex items-center gap-2"><span class="material-symbols-outlined">analytics</span> Architecture Audit</h4>
-              <p class="text-sm text-primary-fixed-dim opacity-90 leading-relaxed">Score: 99/100. Best practices applied to database indexing and API routing.</p>
-              <div class="mt-4 flex gap-2">
-                <span class="px-2 py-1 bg-surface-container-lowest/20 rounded text-xs">React</span>
-                <span class="px-2 py-1 bg-surface-container-lowest/20 rounded text-xs">Node.js</span>
-              </div>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="absolute bottom-[10%] right-[20%] w-[250px] bg-surface-container-lowest p-5 rounded-2xl shadow-[0_10px_25px_rgba(0,16,59,0.05)] border border-outline-variant/30 transform rotate-6 transition-transform duration-700 group-hover:rotate-12 group-hover:translate-x-2 z-10 opacity-90">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-xl bg-tertiary-fixed-dim/20 text-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined">rocket_launch</span></div>
-                <div class="space-y-1.5 flex-1">
-                  <div class="w-full h-2 bg-surface-variant rounded-full"></div>
-                  <div class="w-2/3 h-2 bg-surface-variant rounded-full"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="relative z-10 max-w-2xl">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-4 border border-cyan-300/20">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            Ready to Accelerate?
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-3 tracking-tight">Ready to build something amazing?</h2>
+          <p class="text-slate-200 text-base md:text-lg leading-relaxed">
+            Partner with us to transform your vision into robust, market-ready digital products with zero architectural debt.
+          </p>
+        </div>
+        <div class="relative z-10 shrink-0">
+          <a class="inline-flex items-center gap-2 justify-center rounded-xl h-12 px-8 bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-sm tracking-wide transition-all duration-200 shadow-soft-md hover:shadow-soft-lg active:scale-95" href="contacts.html">
+            <span>Schedule a Consultation</span>
+            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+          </a>
         </div>
       </section>
+    </div>
 
-      <!-- Call to Action -->
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-        <section class="bg-primary rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-16 shadow-[0_0_50px_-12px_rgba(0,98,160,0.5)] relative overflow-hidden group animate-fade-in-up" style="animation-delay: 0.2s;">
-          <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,rgba(127,244,255,0.15),transparent_60%)] -translate-y-1/2 translate-x-1/3 group-hover:bg-[radial-gradient(circle_at_center,rgba(127,244,255,0.25),transparent_70%)] transition-colors duration-700 pointer-events-none animate-pulse"></div>
-          
-          <div class="relative z-10 max-w-2xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-on-primary mb-4 tracking-tight">Ready to build something amazing?</h2>
-            <p class="text-primary-fixed-dim text-lg">
-              Partner with us to transform your ideas into robust, market-ready digital products.
-            </p>
-          </div>
-          <div class="relative z-10 shrink-0">
-            <a class="inline-flex items-center gap-2 justify-center rounded-lg h-12 px-8 bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim hover:shadow-[0_0_20px_rgba(127,244,255,0.6)] font-bold text-sm tracking-[0.015em] transition-all duration-300" href="contacts.html">
-              Schedule a Consultation
-              <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-            </a>
-          </div>
-        </section>
+    <!-- Technologies Section -->
+    <section class="py-16 bg-white border-y border-slate-200/80 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div class="mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-3 block">Engineering Capabilities</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Technologies We Leverage</h2>
+          <p class="text-slate-600 text-base max-w-2xl mx-auto leading-relaxed">
+            Enterprise-grade tools and frameworks to deliver scalable, secure, and high-performance solutions.
+          </p>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-5xl mx-auto">
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            HTML5 &amp; Modern JS
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            Tailwind CSS
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            React &amp; Next.js
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            Flutter &amp; Dart
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            Java &amp; Spring Boot
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            Node.js &amp; Express
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            Firebase
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            Supabase &amp; PostgreSQL
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            AWS Cloud
+          </span>
+          <span class="px-6 py-3 bg-slate-50 border border-slate-200/80 rounded-2xl text-sm md:text-base font-semibold text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+            Docker &amp; CI/CD
+          </span>
+        </div>
       </div>
+    </section>
 
-      <!-- Technologies Section -->
-<section class="py-20 bg-surface-container-lowest border-y border-outline-variant/30 relative overflow-hidden animate-fade-in-up">
-  <!-- Background decorative elements -->
-  <div class="absolute -right-20 -top-20 w-72 h-72 bg-secondary/10 rounded-full blur-[80px] pointer-events-none"></div>
-  <div class="absolute -left-20 -bottom-20 w-72 h-72 bg-primary/10 rounded-full blur-[80px] pointer-events-none"></div>
-  
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-    <div class="mb-14">
-      <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-3 block font-label-caps animate-pulse">Our Tech Stack</span>
-      <h2 class="text-3xl md:text-5xl font-extrabold text-on-surface mb-5 tracking-tight hover:scale-105 transition-transform duration-500">Technologies We Use</h2>
-      <p class="text-on-surface-variant text-lg max-w-2xl mx-auto leading-relaxed">
-        Leveraging modern, enterprise-grade tools and frameworks to deliver scalable, secure, and high-performance solutions.
-      </p>
-    </div>
-    
-    <div class="flex flex-wrap justify-center gap-4 md:gap-5 max-w-5xl mx-auto">
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-secondary hover:border-secondary/50 hover:bg-secondary/5 hover:shadow-[0_8px_16px_-6px_rgba(0,166,255,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default">
-        HTML
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-secondary hover:border-secondary/50 hover:bg-secondary/5 hover:shadow-[0_8px_16px_-6px_rgba(0,166,255,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-75">
-        CSS
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-secondary hover:border-secondary/50 hover:bg-secondary/5 hover:shadow-[0_8px_16px_-6px_rgba(0,166,255,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-100">
-        Bootstrap
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-secondary hover:border-secondary/50 hover:bg-secondary/5 hover:shadow-[0_8px_16px_-6px_rgba(0,166,255,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-150">
-        Flutter
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-primary hover:border-primary/50 hover:bg-primary/5 hover:shadow-[0_8px_16px_-6px_rgba(0,98,160,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-200">
-        Java
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-primary hover:border-primary/50 hover:bg-primary/5 hover:shadow-[0_8px_16px_-6px_rgba(0,98,160,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-300">
-        PHP
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-tertiary hover:border-tertiary/50 hover:bg-tertiary/5 hover:shadow-[0_8px_16px_-6px_rgba(111,81,213,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-100">
-        Firebase
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-tertiary hover:border-tertiary/50 hover:bg-tertiary/5 hover:shadow-[0_8px_16px_-6px_rgba(111,81,213,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-150">
-        Supabase
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-tertiary hover:border-tertiary/50 hover:bg-tertiary/5 hover:shadow-[0_8px_16px_-6px_rgba(111,81,213,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-200">
-        MySQL
-      </span>
-      <span class="group relative px-6 py-3 bg-surface-container-low border border-outline-variant/40 rounded-2xl text-sm md:text-base font-bold text-on-surface hover:text-tertiary hover:border-tertiary/50 hover:bg-tertiary/5 hover:shadow-[0_8px_16px_-6px_rgba(111,81,213,0.2)] hover:-translate-y-2 transition-all duration-300 cursor-default delay-300">
-        WordPress
-      </span>
-    </div>
-  </div>
-</section>
-
-    </div>
   </main>
 
-<!-- Footer minimal note -->
-<footer class="border-t border-outline-variant bg-surface-container-low py-10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <div class="flex items-center gap-2"><a href="home.html" class="flex items-center gap-2" aria-label="Apexify Home"><img src="images/logo.png" alt="Apexify Software Solutions" class="h-9 w-auto object-contain"></a></div>
-    <p class="text-xs text-on-surface-variant font-code-sm">© 2025 Apexify. Rooted in architectural precision.</p>
-    <div class="flex gap-4 text-xs text-on-surface-variant">
-      <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
-      <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
-      <a class="hover:text-primary transition-colors" href="#">Security Architecture</a>
+  <!-- Modern Standardized Footer -->
+  <footer class="border-t border-slate-200/80 bg-slate-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <a href="home.html" class="flex items-center gap-2" aria-label="Apexify Home">
+          <img src="images/logo.png" alt="Apexify Software Solutions" class="h-9 w-auto object-contain">
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 font-code-sm text-center sm:text-left">© 2026 Apexify. Rooted in architectural precision.</p>
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-600 font-medium">
+        <a class="hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+        <a class="hover:text-primary transition-colors" href="terms-and-conditions.html">Terms of Service</a>
+        <a class="hover:text-primary transition-colors" href="solution.html">Security Architecture</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
