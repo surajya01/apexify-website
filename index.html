@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Apexify | Software Engineering &amp; Digital Product Studio</title>
+  <meta name="description" content="Apexify Software Solutions designs and builds websites, web applications, mobile apps, and custom software for high-growth businesses.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS (Local Build) -->
+  <link rel="stylesheet" href="dist/output.css">
+  <meta property="og:title" content="Apexify | Software Engineering &amp; Digital Product Studio">
+  <meta property="og:description" content="From responsive websites to Android apps and custom platforms, Apexify delivers digital products built around your business goals.">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Apexify","description":"Web development, mobile app development, e-commerce development and custom software services.","serviceType":["Web Development","E-commerce Development","Mobile App Development","Custom Software Development"]}</script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-gradient-to-r from-[#071739] via-[#0B245E] to-[#0A3078] border-b border-blue-900/40 text-slate-200 py-2.5 px-4 text-xs font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/20 text-cyan-300 border border-cyan-400/30 text-[11px] font-semibold uppercase tracking-wider shadow-xs">
+          <span class="size-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          Accepting Engagements
+        </span>
+        <span class="text-slate-200 text-xs sm:text-sm">
+          Now onboarding software engineering &amp; digital product engagements • Free architectural consultation
+        </span>
+      </div>
+      <a class="inline-flex items-center gap-1.5 text-amber-300 hover:text-white text-xs font-semibold group transition-all" href="contacts.html">
+        Claim Consultation
+        <span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Top Glass Header -->
+  <header class="sticky top-0 z-50 glass-header border-b border-slate-200/80 shadow-[0_2px_12px_rgba(15,23,42,0.03)] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Brand -->
+      <a class="flex items-center gap-3 text-primary focus:outline-none group" href="home.html">
+        <img src="images/logo.png" alt="Apexify Software Solutions" class="h-10 w-auto object-contain transition-transform group-hover:scale-105 duration-200">
+      </a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="services.html">Services</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="why-us.html">Why Us</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="our_work.html">Work</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="process.html">Process</a>
+        <a class="text-slate-600 hover:text-primary transition-colors py-1 relative hover:after:w-full after:w-0 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-0 after:transition-all" href="solution.html">Architecture</a>
+      </nav>
+      <!-- CTAs -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center rounded-xl h-10 px-4 bg-slate-100 hover:bg-slate-200/80 text-slate-800 hover:text-primary text-sm font-semibold border border-slate-200/80 transition-all duration-200" href="our_work.html">View Our Work</a>
+        <a class="hidden md:inline-flex items-center gap-1.5 justify-center rounded-xl h-10 px-5 bg-gradient-to-r from-primary via-blue-700 to-secondary text-white hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 text-sm font-semibold tracking-wide active:scale-95" href="contacts.html">
+          <span>Start a Project</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        <!-- Hamburger Button -->
+        <button id="menu-button" aria-label="Open menu" aria-expanded="false" class="md:hidden flex items-center justify-center w-10 h-10 rounded-xl text-slate-700 hover:bg-slate-100 border border-slate-200/60 transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Drawer (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-4 space-y-1.5 shadow-xl shadow-slate-900/5 relative z-50">
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="services.html">Services</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="why-us.html">Why Us</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="our_work.html">Work</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="process.html">Process</a>
+      <a class="block px-3.5 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:text-primary hover:bg-slate-100 transition-colors" href="solution.html">Architecture</a>
+      <div class="pt-2 border-t border-slate-200/80">
+        <a class="block w-full text-center mt-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary via-blue-700 to-secondary text-white font-semibold text-sm shadow-md transition-all hover:shadow-lg active:scale-95" href="contacts.html">Start a Project</a>
+      </div>
+    </div>
+  </header>
+  <script>
+  (function(){
+    var btn = document.getElementById('menu-button') || document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if(btn && menu){
+      btn.addEventListener('click', function(){
+        var isHidden = menu.classList.toggle('hidden');
+        btn.setAttribute('aria-expanded', String(!isHidden));
+        var icon = btn.querySelector('.material-symbols-outlined');
+        if(icon) {
+          icon.textContent = isHidden ? 'menu' : 'close';
+        }
+      });
+    }
+  })();
+  </script>
+
+  <!-- Colorful Vibrant Hero Section -->
+  <section class="relative w-full pt-20 pb-20 sm:pt-28 sm:pb-24 lg:pt-36 lg:pb-32 overflow-hidden mb-0 z-10 border-b border-slate-200/80 bg-[url('images/hero_bg_home.jpg')] bg-cover bg-center bg-no-repeat">
+    <!-- Ambient Colorful Light Orbs -->
+    <div class="absolute inset-0 bg-gradient-to-b from-white/92 via-white/80 to-[#F8FAFC]/95 backdrop-blur-[2px]"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-tr from-cyan-400/25 to-blue-500/20 rounded-full blur-[100px] pointer-events-none animate-pulse"></div>
+    <div class="absolute bottom-10 right-1/4 w-80 h-80 bg-gradient-to-bl from-indigo-500/20 to-purple-500/20 rounded-full blur-[90px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-72 h-72 bg-gradient-to-r from-amber-400/15 to-orange-400/15 rounded-full blur-[80px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <!-- Glow Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/95 border border-blue-200/90 text-slate-800 text-xs font-semibold tracking-wider uppercase mb-8 shadow-soft-sm backdrop-blur-sm">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500"></span>
+        </span>
+        <span class="bg-gradient-to-r from-primary via-blue-600 to-secondary bg-clip-text text-transparent font-extrabold">
+          Software Engineering &amp; Digital Product Studio
+        </span>
+      </div>
+      
+      <!-- Gradient Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.12] tracking-tight max-w-5xl mx-auto font-display">
+        Build digital products that <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-cyan-600 to-indigo-600">move your business forward.</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+        Apexify Software Solutions designs and develops websites, web applications, mobile apps, and custom software for high-growth enterprises and venture-backed teams.
+      </p>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a class="w-full sm:w-auto inline-flex items-center gap-2 justify-center rounded-xl bg-gradient-to-r from-primary via-blue-700 to-secondary text-white hover:shadow-xl hover:shadow-blue-500/30 px-8 py-3.5 text-sm font-bold tracking-wider uppercase transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 shadow-soft-sm" href="contacts.html">
+          <span>Start a Project</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+        <a class="w-full sm:w-auto inline-flex items-center gap-2 justify-center rounded-xl border-2 border-slate-300/80 bg-white/95 text-slate-800 hover:border-primary hover:text-primary hover:bg-white hover:shadow-soft-md px-8 py-3.5 text-sm font-bold tracking-wider uppercase transition-all duration-300 backdrop-blur-sm" href="our_work.html">
+          <span class="material-symbols-outlined text-[18px] text-secondary">play_circle</span>
+          <span>View Our Work</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Trust & Capability Strip (Colorful Accents) -->
+  <section class="border-y border-slate-200/80 bg-white py-12" id="architecture">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Metric 1: Clean Code (Emerald Accent) -->
+        <div class="flex flex-col gap-1 p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-emerald-50/40 to-white border border-emerald-100/90 shadow-soft-xs hover:shadow-soft-md hover:border-emerald-300 transition-all duration-200 group">
+          <div class="flex items-center gap-2.5 text-slate-500 text-xs font-semibold uppercase tracking-wider">
+            <div class="size-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[18px]">integration_instructions</span>
+            </div>
+            <span class="text-[11px] font-bold text-emerald-800">Architecture</span>
+          </div>
+          <p class="text-slate-900 tracking-tight text-xl sm:text-2xl font-bold font-display mt-2 group-hover:text-emerald-700 transition-colors">Clean Code</p>
+          <span class="text-xs text-slate-500">Decoupled domain patterns</span>
+        </div>
+
+        <!-- Metric 2: 100% TypeScript (Blue Accent) -->
+        <div class="flex flex-col gap-1 p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-blue-50/40 to-white border border-blue-100/90 shadow-soft-xs hover:shadow-soft-md hover:border-blue-300 transition-all duration-200 group">
+          <div class="flex items-center gap-2.5 text-slate-500 text-xs font-semibold uppercase tracking-wider">
+            <div class="size-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[18px]">data_object</span>
+            </div>
+            <span class="text-[11px] font-bold text-blue-800">Type Safety</span>
+          </div>
+          <p class="text-slate-900 tracking-tight text-xl sm:text-2xl font-bold font-display mt-2 group-hover:text-blue-700 transition-colors">100% TypeScript</p>
+          <span class="text-xs text-slate-500">Compile-time fault prevention</span>
+        </div>
+
+        <!-- Metric 3: SOC2 Ready (Indigo Accent) -->
+        <div class="flex flex-col gap-1 p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-indigo-50/40 to-white border border-indigo-100/90 shadow-soft-xs hover:shadow-soft-md hover:border-indigo-300 transition-all duration-200 group">
+          <div class="flex items-center gap-2.5 text-slate-500 text-xs font-semibold uppercase tracking-wider">
+            <div class="size-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[18px]">lock</span>
+            </div>
+            <span class="text-[11px] font-bold text-indigo-800">Compliance</span>
+          </div>
+          <p class="text-slate-900 tracking-tight text-xl sm:text-2xl font-bold font-display mt-2 group-hover:text-indigo-700 transition-colors">SOC2 Ready</p>
+          <span class="text-xs text-slate-500">Strict RBAC &amp; encryption</span>
+        </div>
+
+        <!-- Metric 4: Weekly Agile (Amber Accent) -->
+        <div class="flex flex-col gap-1 p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-amber-50/40 to-white border border-amber-100/90 shadow-soft-xs hover:shadow-soft-md hover:border-amber-300 transition-all duration-200 group">
+          <div class="flex items-center gap-2.5 text-slate-500 text-xs font-semibold uppercase tracking-wider">
+            <div class="size-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-[18px]">sync</span>
+            </div>
+            <span class="text-[11px] font-bold text-amber-800">Sprint Velocity</span>
+          </div>
+          <p class="text-slate-900 tracking-tight text-xl sm:text-2xl font-bold font-display mt-2 group-hover:text-amber-700 transition-colors">Weekly Agile</p>
+          <span class="text-xs text-slate-500">Continuous staging deploys</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Core Services Grid (Vibrant Distinct Personalities) -->
+  <section class="py-20 lg:py-24 bg-[#F8FAFC]" id="services">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.14em] text-secondary">Our Capabilities</span>
+        <h2 class="text-slate-900 text-3xl sm:text-4xl font-extrabold tracking-tight mt-2 font-display">
+          Core Engineering &amp; Product Services
+        </h2>
+        <p class="mt-4 text-slate-600 text-base leading-relaxed">
+          From full-cycle platform development to complex systems integration, we build resilient software that scales alongside your market demands.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Service 1: Static Websites (Cyan Gradient) -->
+        <div class="group relative bg-white p-8 rounded-3xl border border-slate-200/80 shadow-soft-xs hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1.5 hover:border-cyan-400 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <a href="services.html" class="absolute inset-0 z-10" aria-label="Static Websites & Fast Portals"></a>
+          <div>
+            <div class="size-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/25 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[26px]">speed</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2.5 group-hover:text-cyan-700 transition-colors">Static Websites &amp; Fast Portals</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Ultra-fast Jamstack architectures, SSG, and zero-maintenance marketing sites engineered for 100/100 Lighthouse performance, instant load times, and maximum SEO visibility.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-slate-100 mt-6 flex items-center justify-between text-xs font-semibold text-cyan-700">
+            <span class="bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-100">Astro • Next.js SSG • Jamstack</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Service 2: Dynamic Web Applications (Indigo/Violet Gradient) -->
+        <div class="group relative bg-white p-8 rounded-3xl border border-slate-200/80 shadow-soft-xs hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1.5 hover:border-indigo-400 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <a href="services.html" class="absolute inset-0 z-10" aria-label="Dynamic Web Applications"></a>
+          <div>
+            <div class="size-14 rounded-2xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-500/25 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[26px]">web</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2.5 group-hover:text-indigo-700 transition-colors">Dynamic Web Applications</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Interactive full-stack web apps, user authentication, real-time dashboards, SaaS platforms, and API-connected enterprise software engineered for security and scale.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-slate-100 mt-6 flex items-center justify-between text-xs font-semibold text-indigo-700">
+            <span class="bg-indigo-50 px-2.5 py-1 rounded-md border border-indigo-100">React • Next.js • Node • PostgreSQL</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Service 3: Mobile App Development (Emerald/Teal Gradient) -->
+        <div class="group relative bg-white p-8 rounded-3xl border border-slate-200/80 shadow-soft-xs hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1.5 hover:border-emerald-400 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <a href="services.html" class="absolute inset-0 z-10" aria-label="Mobile App Development"></a>
+          <div>
+            <div class="size-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/25 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[26px]">smartphone</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2.5 group-hover:text-emerald-700 transition-colors">Mobile App Development</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Seamless iOS and Android native &amp; cross-platform solutions. Delivering smooth 60fps offline-first user interfaces, hardware integrations, and push messaging.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-slate-100 mt-6 flex items-center justify-between text-xs font-semibold text-emerald-700">
+            <span class="bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-100">Flutter • React Native • iOS &amp; Android</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Service 4: Cloud & API Infrastructure (Blue/Cyan Gradient) -->
+        <div class="group relative bg-white p-8 rounded-3xl border border-slate-200/80 shadow-soft-xs hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1.5 hover:border-blue-400 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <a href="services.html" class="absolute inset-0 z-10" aria-label="Cloud & API Infrastructure"></a>
+          <div>
+            <div class="size-14 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-lg shadow-blue-500/25 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[26px]">cloud</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2.5 group-hover:text-blue-700 transition-colors">Cloud &amp; API Infrastructure</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Scalable serverless architectures, custom REST/GraphQL microservices, and auto-scaling container clusters managed with automated CI/CD pipelines.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-slate-100 mt-6 flex items-center justify-between text-xs font-semibold text-blue-700">
+            <span class="bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">AWS • GCP • Docker • CI/CD</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Service 5: UI/UX Engineering (Fuchsia/Pink Gradient) -->
+        <div class="group relative bg-white p-8 rounded-3xl border border-slate-200/80 shadow-soft-xs hover:shadow-xl hover:shadow-pink-500/10 hover:-translate-y-1.5 hover:border-pink-400 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <a href="services.html" class="absolute inset-0 z-10" aria-label="UI/UX Engineering"></a>
+          <div>
+            <div class="size-14 rounded-2xl bg-gradient-to-br from-fuchsia-500 to-pink-600 text-white shadow-lg shadow-pink-500/25 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[26px]">design_services</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2.5 group-hover:text-pink-700 transition-colors">UI/UX Engineering</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Production-ready design systems, interaction design, and accessible interfaces that bridge Figma designs directly into robust, pixel-perfect code libraries.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-slate-100 mt-6 flex items-center justify-between text-xs font-semibold text-pink-700">
+            <span class="bg-pink-50 px-2.5 py-1 rounded-md border border-pink-100">Design Tokens • WCAG 2.1 AA</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+        <!-- Service 6: Ongoing Support & Optimization (Amber/Orange Gradient) -->
+        <div class="group relative bg-white p-8 rounded-3xl border border-slate-200/80 shadow-soft-xs hover:shadow-xl hover:shadow-amber-500/10 hover:-translate-y-1.5 hover:border-amber-400 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <a href="services.html" class="absolute inset-0 z-10" aria-label="Ongoing Support & Optimization"></a>
+          <div>
+            <div class="size-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg shadow-amber-500/25 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="material-symbols-outlined text-[26px]">monitoring</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2.5 group-hover:text-amber-700 transition-colors">Ongoing Support &amp; Optimization</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Continuous performance tuning, security audits, database indexing, and regular feature evolution backed by proactive monitoring and dedicated SLAs.
+            </p>
+          </div>
+          <div class="pt-5 border-t border-slate-100 mt-6 flex items-center justify-between text-xs font-semibold text-amber-700">
+            <span class="bg-amber-50 px-2.5 py-1 rounded-md border border-amber-100">24/7 Monitoring • SLO Guarantee</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Why Apexify (Vivid Colored Differentiators) -->
+  <section class="py-24 bg-white border-y border-slate-200/80" id="why-us">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+        <div class="lg:col-span-5">
+          <span class="text-xs font-bold uppercase tracking-[0.16em] text-secondary">The Apexify Difference</span>
+          <h2 class="text-slate-900 text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 leading-[1.15] font-display">
+            Engineered for partners who value precision.
+          </h2>
+          <p class="mt-6 text-slate-600 text-lg leading-relaxed">
+            We operate as your dedicated technical arm, eliminating agency overhead and delivering high-yield software that survives rapid scale.
+          </p>
+          <div class="mt-8">
+            <a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:text-secondary uppercase tracking-wider group transition-colors" href="why-us.html">
+              <span>Read our engineering manifesto</span>
+              <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">trending_flat</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12">
+          
+          <!-- Pillar 1: Blue/Cyan -->
+          <div class="flex flex-col group p-6 rounded-2xl bg-blue-50/30 border border-blue-100/80 hover:bg-white hover:border-blue-300 hover:shadow-soft-md transition-all">
+            <div class="mb-4 border-b border-blue-200/60 pb-3 flex items-center justify-between">
+              <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 font-display">01</span>
+              <div class="size-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Engineering Rigor</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              We apply strict automated testing, CI/CD gates, and modular domain architectures so your system never becomes technical debt.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Indigo/Purple -->
+          <div class="flex flex-col group p-6 rounded-2xl bg-indigo-50/30 border border-indigo-100/80 hover:bg-white hover:border-indigo-300 hover:shadow-soft-md transition-all">
+            <div class="mb-4 border-b border-indigo-200/60 pb-3 flex items-center justify-between">
+              <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 font-display">02</span>
+              <div class="size-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">support_agent</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Direct Access</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              No account middlemen or distorted messages. You collaborate directly with principal architects and lead engineers.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Emerald/Teal -->
+          <div class="flex flex-col group p-6 rounded-2xl bg-emerald-50/30 border border-emerald-100/80 hover:bg-white hover:border-emerald-300 hover:shadow-soft-md transition-all">
+            <div class="mb-4 border-b border-emerald-200/60 pb-3 flex items-center justify-between">
+              <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500 font-display">03</span>
+              <div class="size-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">trending_up</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Pragmatic ROI</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              We prioritize software decisions that drive real retention, conversion rates, and server efficiency rather than vanity engineering.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Amber/Orange -->
+          <div class="flex flex-col group p-6 rounded-2xl bg-amber-50/30 border border-amber-100/80 hover:bg-white hover:border-amber-300 hover:shadow-soft-md transition-all">
+            <div class="mb-4 border-b border-amber-200/60 pb-3 flex items-center justify-between">
+              <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 font-display">04</span>
+              <div class="size-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">code</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Maintainable Code</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Self-documenting TypeScript, comprehensive architectural diagrams, and smooth developer onboarding if your internal team takes over.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Featured Projects Preview (High-Impact Visual Cards) -->
+  <section class="py-20 lg:py-24 bg-[#F8FAFC]" id="work">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.14em] text-secondary">Selected Case Studies</span>
+          <h2 class="text-slate-900 text-3xl sm:text-4xl font-extrabold tracking-tight mt-2 font-display">
+            Proven execution across complex spaces.
+          </h2>
+        </div>
+        <a class="inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-secondary group transition-colors" href="our_work.html">
+          <span>Request Full Client Portfolio</span>
+          <span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Case Study 1: AquaTrack (Rich Navy-Cyan Gradient) -->
+        <article class="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:shadow-xl hover:-translate-y-1 hover:border-cyan-400 transition-all duration-300 flex flex-col group">
+          <div class="aspect-video w-full bg-[#0a1628] overflow-hidden relative">
+            <img class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="images/aquatrack_dashboard.jpg" alt="AquaTrack Admin Panel Dashboard" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            
+            <!-- Fallback -->
+            <div class="hidden w-full h-full bg-[#0a1628] items-center justify-center flex-col gap-3 p-6">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500 flex items-center justify-center text-white">
+                <span class="material-symbols-outlined text-[24px]">pool</span>
+              </div>
+              <span class="text-cyan-300 text-sm font-bold tracking-widest uppercase">AquaTrack Admin</span>
+            </div>
+            
+            <div class="absolute top-4 left-4 bg-gradient-to-r from-blue-700 to-cyan-600 text-white shadow-md text-xs font-bold px-3 py-1 rounded-full">
+              Sports &amp; Event Management
+            </div>
+            <div class="absolute top-4 right-4 flex items-center gap-1.5 bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">
+              <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>Live
+            </div>
+          </div>
+          
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                <span class="font-medium">Flutter Mobile App &amp; Admin Panel</span>
+                <span class="font-code-sm font-bold text-cyan-700 bg-cyan-50 border border-cyan-200 px-2.5 py-0.5 rounded-md">Full Product</span>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">AquaTrack</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Complete swimming management ecosystem — Flutter mobile app for athletes and admin panel for club managers. Covers registrations, events, results, rankings, FINA points, schedules, memberships, and bulk imports.
+              </p>
+              
+              <div class="grid grid-cols-3 gap-3 py-4 border-y border-slate-100 text-center mb-5 bg-slate-50 rounded-2xl">
+                <div>
+                  <div class="text-blue-600 font-extrabold text-xl font-display">2</div>
+                  <div class="text-[11px] text-slate-500 font-semibold">Apps Built</div>
+                </div>
+                <div>
+                  <div class="text-indigo-600 font-extrabold text-xl font-display">10+</div>
+                  <div class="text-[11px] text-slate-500 font-semibold">Core Modules</div>
+                </div>
+                <div>
+                  <div class="text-emerald-600 font-extrabold text-xl font-display flex items-center justify-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>Live
+                  </div>
+                  <div class="text-[11px] text-slate-500 font-semibold">Firebase Backend</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
+              <span class="px-2.5 py-1 rounded-lg bg-sky-50 text-sky-800 border border-sky-200">Flutter</span>
+              <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-800 border border-blue-200">Dart</span>
+              <span class="px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">Firebase</span>
+              <span class="px-2.5 py-1 rounded-lg bg-orange-50 text-orange-800 border border-orange-200">Firestore</span>
+              <span class="px-2.5 py-1 rounded-lg bg-yellow-50 text-yellow-900 border border-yellow-200">Firebase Auth</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 2: Unicorn Express (Rich Logistics Amber-Orange) -->
+        <article class="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:shadow-xl hover:-translate-y-1 hover:border-orange-400 transition-all duration-300 flex flex-col group">
+          <div class="aspect-video w-full overflow-hidden relative bg-gradient-to-br from-amber-500 via-orange-600 to-rose-600 flex items-center justify-center">
+            <div class="absolute inset-0 opacity-15">
+              <div class="absolute top-4 right-4 w-32 h-32 rounded-full bg-white"></div>
+              <div class="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white"></div>
+            </div>
+            <div class="relative z-10 text-center px-6">
+              <div class="inline-flex items-center gap-2 bg-white/25 backdrop-blur-sm rounded-full px-3.5 py-1 mb-3 border border-white/30">
+                <span class="material-symbols-outlined text-white text-[14px]">local_shipping</span>
+                <span class="text-white text-[10px] font-bold uppercase tracking-widest">Packers &amp; Movers</span>
+              </div>
+              <h3 class="text-white font-extrabold text-2xl leading-tight font-display">Unicorn Express</h3>
+              <p class="text-white/90 text-sm mt-1 font-medium">Professional Relocation Services</p>
+            </div>
+            <div class="absolute top-4 left-4 bg-white text-orange-700 text-xs font-bold px-3 py-1 rounded-full shadow-md">
+              Logistics &amp; Transportation
+            </div>
+            <div class="absolute top-4 right-4 flex items-center gap-1.5 bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md">
+              <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>Live
+            </div>
+          </div>
+          
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                <span class="font-medium">Business Website · Local SEO</span>
+                <a href="https://unicornexpresspackersandmovers.com/" target="_blank" rel="noopener noreferrer" class="font-code-sm font-bold text-orange-600 hover:text-orange-700 hover:underline flex items-center gap-0.5">
+                  Live Site <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+                </a>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">Unicorn Express Packers &amp; Movers</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Professional logistics and relocation website built with a focus on responsive UI, service presentation, customer enquiries, and local SEO across multiple cities.
+              </p>
+              
+              <div class="grid grid-cols-3 gap-3 py-4 border-y border-slate-100 text-center mb-5 bg-slate-50 rounded-2xl">
+                <div>
+                  <div class="text-emerald-600 font-extrabold text-xl font-display flex items-center justify-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>Live
+                  </div>
+                  <div class="text-[11px] text-slate-500 font-semibold">Production</div>
+                </div>
+                <div>
+                  <div class="text-orange-600 font-extrabold text-xl font-display">SEO</div>
+                  <div class="text-[11px] text-slate-500 font-semibold">Optimized</div>
+                </div>
+                <div>
+                  <div class="text-blue-600 font-extrabold text-xl font-display">100%</div>
+                  <div class="text-[11px] text-slate-500 font-semibold">Responsive</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
+              <span class="px-2.5 py-1 rounded-lg bg-orange-50 text-orange-800 border border-orange-200">HTML5</span>
+              <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-800 border border-blue-200">CSS3</span>
+              <span class="px-2.5 py-1 rounded-lg bg-yellow-50 text-yellow-900 border border-yellow-200">JavaScript</span>
+              <span class="px-2.5 py-1 rounded-lg bg-cyan-50 text-cyan-800 border border-cyan-200">WordPress</span>
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200">Local SEO</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Development Process (4-Step Pipeline with Color Stages) -->
+  <section class="py-20 bg-white border-t border-slate-200/80" id="process">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.14em] text-secondary">The Execution Blueprint</span>
+        <h2 class="text-slate-900 text-3xl sm:text-4xl font-extrabold tracking-tight mt-2 font-display">
+          Transparent 4-Step Engineering Pipeline
+        </h2>
+        <p class="mt-4 text-slate-600 text-base leading-relaxed">
+          Predictable milestones, weekly sprint deliverables, and zero ambiguity from inception to planetary deployment.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Step 1: Cyan -->
+        <div class="relative p-7 rounded-3xl bg-slate-50/70 border border-slate-200/80 hover:bg-white hover:shadow-soft-lg hover:border-cyan-400 border-t-4 border-t-cyan-500 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600 font-display">01</span>
+              <div class="size-8 rounded-lg bg-cyan-100 text-cyan-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">architecture</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">Architecture &amp; Discovery</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              System topology design, domain modeling, cloud resource estimation, and specification of exact sprint deliverables.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200/60 text-[11px] font-bold text-cyan-700 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px]">task_alt</span>
+            <span>Arch Specs &amp; Schemas</span>
+          </div>
+        </div>
+
+        <!-- Step 2: Indigo -->
+        <div class="relative p-7 rounded-3xl bg-slate-50/70 border border-slate-200/80 hover:bg-white hover:shadow-soft-lg hover:border-indigo-400 border-t-4 border-t-indigo-500 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 font-display">02</span>
+              <div class="size-8 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">code</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">Iterative Build Sprints</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              Continuous delivery via bi-weekly sprint cadences. Live staging builds pushed constantly with full GitHub commit visibility.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200/60 text-[11px] font-bold text-indigo-700 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px]">task_alt</span>
+            <span>Weekly Demo Previews</span>
+          </div>
+        </div>
+
+        <!-- Step 3: Amber -->
+        <div class="relative p-7 rounded-3xl bg-slate-50/70 border border-slate-200/80 hover:bg-white hover:shadow-soft-lg hover:border-amber-400 border-t-4 border-t-amber-500 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500 font-display">03</span>
+              <div class="size-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">security</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">QA &amp; Hardening</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              Penetration tests, load-testing simulating high concurrency, automated regression suites, and accessibility audits.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200/60 text-[11px] font-bold text-amber-700 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px]">task_alt</span>
+            <span>Zero-Vuln Certification</span>
+          </div>
+        </div>
+
+        <!-- Step 4: Emerald -->
+        <div class="relative p-7 rounded-3xl bg-slate-50/70 border border-slate-200/80 hover:bg-white hover:shadow-soft-lg hover:border-emerald-400 border-t-4 border-t-emerald-500 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500 font-display">04</span>
+              <div class="size-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">Launch &amp; Scale</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              Zero-downtime DNS migrations, canary rollouts, comprehensive telemetry setup, and complete handover of IP assets.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200/60 text-[11px] font-bold text-emerald-700 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px]">task_alt</span>
+            <span>100% Repository Handover</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section (Vivid Mesh Gradient) -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 mt-20">
+    <section class="bg-gradient-to-r from-[#071739] via-[#0B245E] to-[#0062A0] rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8 p-10 md:p-16 shadow-soft-xl relative overflow-hidden group border border-blue-900/40">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,rgba(0,166,255,0.22),transparent_60%)] -translate-y-1/2 translate-x-1/3 group-hover:bg-[radial-gradient(circle_at_center,rgba(0,166,255,0.32),transparent_70%)] transition-colors duration-700 pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-400/10 rounded-full blur-[100px] pointer-events-none"></div>
+      
+      <div class="relative z-10 max-w-2xl text-center md:text-left">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-semibold uppercase tracking-wider mb-6 border border-cyan-400/30">
+          <span class="size-2 rounded-full bg-cyan-400 animate-ping"></span>
+          Now Scheduling Q2 / Q3 Initiatives
+        </div>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tight leading-tight font-display">
+          Ready to build your next breakthrough product?
+        </h2>
+        <p class="text-slate-200 text-lg leading-relaxed">
+          Let's discuss your roadmap. Book an architectural consultation directly with our lead engineering partners.
+        </p>
+      </div>
+      <div class="relative z-10 shrink-0 flex flex-col sm:flex-row gap-4">
+        <a class="inline-flex items-center gap-2 justify-center rounded-xl h-12 px-8 bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-sm tracking-wide shadow-lg shadow-amber-400/25 hover:shadow-amber-400/40 transition-all duration-300 active:scale-95" href="contacts.html">
+          <span>Schedule Call</span>
+          <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Search-focused service overview (Vibrant Tri-Color Cards) -->
+  <section class="border-t border-slate-200/80 bg-white py-20" aria-labelledby="digital-services-heading">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <span class="text-xs font-bold uppercase tracking-[0.14em] text-secondary">Digital product development</span>
+        <h2 id="digital-services-heading" class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl font-display">
+          Everything you need to take your business online
+        </h2>
+        <p class="mt-5 text-base leading-relaxed text-slate-600">
+          Whether you are launching a new idea or improving an existing business, Apexify can help you create a website, online store, mobile app or custom software that is easy for your customers and team to use.
+        </p>
+      </div>
+      
+      <div class="mt-14 grid gap-8 md:grid-cols-3">
+        <!-- Card 1: Blue -->
+        <article class="rounded-3xl border border-blue-200/80 bg-gradient-to-b from-blue-50/40 to-white p-8 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="size-12 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-md shadow-blue-500/20 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[24px]">language</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">A professional business website</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              Show your services, build trust and make it simple for people to contact you. Every website is responsive, so it works well on phones, tablets and desktops.
+            </p>
+          </div>
+          <a class="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-blue-700 hover:text-blue-900 group transition-colors" href="services.html">
+            <span>See website options</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </article>
+
+        <!-- Card 2: Emerald -->
+        <article class="rounded-3xl border border-emerald-200/80 bg-gradient-to-b from-emerald-50/40 to-white p-8 hover:shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-400 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="size-12 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-500 text-white shadow-md shadow-emerald-500/20 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">An online store that is easy to manage</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              Sell products online with organised categories, secure checkout, payment integration and a dashboard to manage orders in one place.
+            </p>
+          </div>
+          <a class="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-emerald-700 hover:text-emerald-900 group transition-colors" href="services.html">
+            <span>See e-commerce options</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </article>
+
+        <!-- Card 3: Violet -->
+        <article class="rounded-3xl border border-violet-200/80 bg-gradient-to-b from-violet-50/40 to-white p-8 hover:shadow-xl hover:shadow-violet-500/10 hover:border-violet-400 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="size-12 rounded-2xl bg-gradient-to-br from-indigo-600 to-violet-600 text-white shadow-md shadow-violet-500/20 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-[24px]">smartphone</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">A mobile app or custom system</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              Turn your process or product idea into an Android app, customer portal, dashboard or custom web application built around the way you work.
+            </p>
+          </div>
+          <a class="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-indigo-700 hover:text-indigo-900 group transition-colors" href="services.html">
+            <span>See app and software options</span>
+            <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+        </article>
+      </div>
+
+      <div class="mx-auto mt-12 max-w-3xl rounded-2xl bg-blue-50/60 border border-blue-200/80 px-6 py-4 text-center text-sm leading-relaxed text-slate-700 shadow-soft-xs">
+        <strong class="text-primary font-bold">Not sure what you need?</strong> Tell us about your business, your customers and your goal. We will help you choose the right website, app or software solution. View <a class="font-bold text-primary hover:underline" href="services.html">services and starting prices</a>, or <a class="font-bold text-primary hover:underline" href="contacts.html">talk to Apexify about your project</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section (Colorful Interactive Chips) -->
+  <section class="py-20 bg-slate-50/80 border-y border-slate-200/80 relative overflow-hidden">
+    <div class="absolute -right-20 -top-20 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="absolute -left-20 -bottom-20 w-72 h-72 bg-primary/5 rounded-full blur-[80px] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-3 block">Our Tech Stack</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-5 tracking-tight font-display">Technologies We Use</h2>
+        <p class="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          Leveraging modern, enterprise-grade tools and frameworks to deliver scalable, secure, and high-performance solutions.
+        </p>
+      </div>
+      
+      <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-5xl mx-auto">
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-orange-600 hover:border-orange-400 hover:bg-orange-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          HTML5
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-blue-600 hover:border-blue-400 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          CSS3
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-purple-600 hover:border-purple-400 hover:bg-purple-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          Bootstrap
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-sky-600 hover:border-sky-400 hover:bg-sky-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          Flutter
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-red-600 hover:border-red-400 hover:bg-red-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          Java
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-indigo-600 hover:border-indigo-400 hover:bg-indigo-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          PHP
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-amber-600 hover:border-amber-400 hover:bg-amber-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          Firebase
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-emerald-600 hover:border-emerald-400 hover:bg-emerald-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          Supabase
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-cyan-600 hover:border-cyan-400 hover:bg-cyan-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          MySQL
+        </span>
+        <span class="group px-6 py-3 bg-white border border-slate-200/80 rounded-2xl text-sm md:text-base font-bold text-slate-700 hover:text-blue-700 hover:border-blue-400 hover:bg-blue-50/50 hover:shadow-soft-md hover:-translate-y-1 transition-all duration-200 cursor-default">
+          WordPress
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Standardized Footer -->
+  <footer class="border-t border-slate-200/80 bg-slate-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <a href="home.html" class="flex items-center gap-2" aria-label="Apexify Home">
+          <img src="images/logo.png" alt="Apexify Software Solutions" class="h-9 w-auto object-contain">
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 font-code-sm text-center sm:text-left">© 2026 Apexify. Rooted in architectural precision.</p>
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-600 font-medium">
+        <a class="hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a>
+        <a class="hover:text-primary transition-colors" href="terms-and-conditions.html">Terms of Service</a>
+        <a class="hover:text-primary transition-colors" href="solution.html">Security Architecture</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
